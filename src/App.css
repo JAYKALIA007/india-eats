@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.title{
+    display: flex;
+}
+.site-logo{
+    width: 100px;
+    margin: auto 0;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: 5%;
+}
+.site-header{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.site-tagline{
+    display: inline-block;
+    position: relative;
+    top : 24%;
+}
+.nav-items > ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items > ul > li{
+   list-style: none;
+   margin-right:20px;
+   margin-top: 15px;
+}
+.body-container{
+    /* display: flex;
+    white-space: nowrap; */
+}
+.card-container{
+    display: inline-block;
+    width: 20%;
+    margin: 1.7%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.card-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.card-container>div{
+    display:flex;
+    justify-content: space-between;
+}
+.rating{
+    background-color: green;
+    color: white;
+    padding: 3px;
+    position: relative;
+    bottom: 5px;
+    border-radius: 3px;
+}
+.search-bar{
+    margin: 10px;
+    text-align:center;
+}
+.search-icon{
+    position: relative;
+    right: 25px;
+    top: 3px;
+    color: grey;
+    cursor: pointer;
+}
+/* .search-bar:focus {
+    width: 200px;
+    outline : none;
+} */
+.search-bar input[type="text"]:focus {
+    outline : none;
+}
+
