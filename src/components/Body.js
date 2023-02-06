@@ -5,9 +5,11 @@ import { FaSearch } from "react-icons/fa";
 import { useState } from 'react'
 
 const filterData = (searchText , restaurants ) =>{
-    console.log(searchText)
+    // console.log(searchText)
     // console.log(restaurants)
-    const filteredData = restaurants.filter((restaurant) => restaurant.name.includes(searchText));
+    if(searchText === '')
+        return restaurantInfo
+    const filteredData = restaurants.filter((restaurant) => restaurant.name.toLowerCase().includes(searchText.toLowerCase()));
     return filteredData
 }
 
