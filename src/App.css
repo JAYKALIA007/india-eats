@@ -85,4 +85,6 @@ body{
 .search-bar input[type="text"]:focus {
     outline : none;
 }
-
+.shimmer-style{
+    margin-top: 70px;
+}

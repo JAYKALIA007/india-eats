@@ -1,5 +1,6 @@
 import { FaShoppingCart } from "react-icons/fa";
 import logo from '../site_logo_1.jpg'
+import { useState } from "react";
 
 const Title = () =>(
     <div className="title">
@@ -11,7 +12,9 @@ const Title = () =>(
     </div>
 )
 
-const Header = () =>(
+const Header = () =>{
+    const [ loggedIn , setLoggedIn ] = useState(false)
+    return(
     <div className="header" >
         <Title/>
         <div className="nav-items" >
@@ -20,9 +23,10 @@ const Header = () =>(
                 <li>About</li>
                 <li>Contact</li>
                 <li><FaShoppingCart/></li>
+                <li>{(loggedIn) ? <button onClick={()=>setLoggedIn(false)} >  LogOut</button> : <button onClick={()=>setLoggedIn(true)} > Login</button>}</li>
             </ul>
         </div>
     </div>
-)
+)}
 
 export default Header;

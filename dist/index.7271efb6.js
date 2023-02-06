@@ -27193,6 +27193,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _fa = require("react-icons/fa");
 var _siteLogo1Jpg = require("../site_logo_1.jpg");
 var _siteLogo1JpgDefault = parcelHelpers.interopDefault(_siteLogo1Jpg);
+var _react = require("react");
+var _s = $RefreshSig$();
 const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "title",
         children: [
@@ -27208,7 +27210,7 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         alt: "site-logo"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 7,
+                        lineNumber: 8,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -27216,13 +27218,13 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "India eats "
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 8,
+                        lineNumber: 9,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27230,22 +27232,25 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "  Giving your Hunger a new Option"
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 _c = Title;
-const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+const Header = ()=>{
+    _s();
+    const [loggedIn, setLoggedIn] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 16,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27256,51 +27261,74 @@ const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 19,
+                            lineNumber: 22,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 20,
+                            lineNumber: 23,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 21,
+                            lineNumber: 24,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaShoppingCart), {}, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 22,
+                                lineNumber: 25,
                                 columnNumber: 21
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 22,
+                            lineNumber: 25,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: loggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>setLoggedIn(false),
+                                children: "  LogOut"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 26,
+                                columnNumber: 35
+                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>setLoggedIn(true),
+                                children: " Login"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 26,
+                                columnNumber: 97
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 26,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 18,
+                    lineNumber: 21,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 17,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 15,
+        lineNumber: 18,
         columnNumber: 5
     }, undefined);
+};
+_s(Header, "/FFQEO1SnamicrfjXIDK6dN8KII=");
 _c1 = Header;
 exports.default = Header;
 var _c, _c1;
@@ -27312,7 +27340,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","../site_logo_1.jpg":"5CZva","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jZjPM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","../site_logo_1.jpg":"5CZva","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"jZjPM":[function(require,module,exports) {
 // THIS FILE IS AUTO GENERATED
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -55213,21 +55241,45 @@ var _react = require("react");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 // import SearchBar from './SearchBar'
-var _config = require("../config");
+// import { restaurantInfo } from '../config'
 var _fa = require("react-icons/fa");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
-const filterData = (searchText, restaurants)=>{
+const filterData = (searchText, allRestaurants)=>{
     // console.log(searchText)
     // console.log(restaurants)
-    if (searchText === "") return 0, _config.restaurantInfo;
-    const filteredData = restaurants.filter((restaurant)=>restaurant.name.toLowerCase().includes(searchText.toLowerCase()));
+    if (searchText === "") return allRestaurants;
+    const filteredData = allRestaurants.filter((restaurant)=>restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase()));
     return filteredData;
 };
 const Body = ()=>{
     _s();
     const [searchText, setSearchText] = (0, _react.useState)("");
-    const [restaurants, setRestaurants] = (0, _react.useState)((0, _config.restaurantInfo));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
+    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        fetchRestaurantData();
+    }, []);
+    async function fetchRestaurantData() {
+        const res = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING");
+        const json = await res.json();
+        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    }
+    //early return
+    if (!allRestaurants) return null;
+    return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 35,
+        columnNumber: 44
+    }, undefined) : filteredRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "No Restaurant Found"
+    }, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 35,
+        columnNumber: 95
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "search-bar",
@@ -55247,46 +55299,47 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 22,
+                        lineNumber: 38,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaSearch), {
                         className: "search-icon",
                         onClick: ()=>{
-                            setRestaurants(filterData(searchText, restaurants));
+                            setFilteredRestaurants(filterData(searchText, allRestaurants));
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 29,
+                        lineNumber: 45,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 21,
+                lineNumber: 37,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "body-container",
-                children: restaurants.map((restaurant)=>/*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
-                        ...restaurant,
-                        key: restaurant.id,
+                children: filteredRestaurants.map((restaurant)=>// console.log(restaurant.data)
+                    /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
+                        ...restaurant.data,
+                        key: restaurant.data.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 37,
+                            lineNumber: 53,
                             columnNumber: 17
                         },
                         __self: undefined
                     }))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 34,
+                lineNumber: 50,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "PYxTOg7ipBTB6qCXYr5mVT5ir2w=");
+_s(Body, "mfFD1GYTxUKS8gwZ1KRBG0D6XF0=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -55297,7 +55350,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","../config":"jtCLN","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bMboU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"bMboU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -55308,30 +55361,31 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _fa = require("react-icons/fa");
-const RestaurantCard = ({ imgUrl , name , cuisine , rating , time , price  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+var _config = require("../config");
+const RestaurantCard = ({ cloudinaryImageId , name , cuisines , avgRating , slaString , costForTwoString , id  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "card-image",
                 alt: name,
-                src: imgUrl
+                src: `${(0, _config.IMG_CDN_URL)}/${cloudinaryImageId}`
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 5,
+                lineNumber: 6,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: name
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: cuisine
+                children: cuisines.slice(0, 3).join(", ")
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55344,42 +55398,42 @@ const RestaurantCard = ({ imgUrl , name , cuisine , rating , time , price  })=>/
                                 size: "0.8em"
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantCard.js",
-                                lineNumber: 9,
+                                lineNumber: 10,
                                 columnNumber: 36
                             }, undefined),
                             " ",
-                            rating,
+                            avgRating,
                             " "
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 9,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: time
-                    }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
                         lineNumber: 10,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: price
+                        children: slaString
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
                         lineNumber: 11,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: costForTwoString
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 12,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantCard.js",
-        lineNumber: 4,
+        lineNumber: 5,
         columnNumber: 5
     }, undefined);
 _c = RestaurantCard;
@@ -55392,86 +55446,2266 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jtCLN":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN"}],"jtCLN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
 parcelHelpers.export(exports, "restaurantInfo", ()=>restaurantInfo);
+const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill";
 const restaurantInfo = [
     {
-        id: 1,
-        name: `Mc Donald's`,
-        imgUrl: "https://resize.indiatvnews.com/en/resize/newbucket/730_-/2019/05/nc-1558361800.jpg",
-        cuisine: `American`,
-        rating: 4.2,
-        time: `35 mins`,
-        price: `₹ 1000 for 2`
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "279735",
+            "name": "Easy Bites by Hotel Empire",
+            "uuid": "b5eda477-5ddc-4826-a9d3-7a3b37c84b51",
+            "city": "1",
+            "area": "Ashok Nagar",
+            "totalRatingsString": "100+ ratings",
+            "cloudinaryImageId": "d06b7fa84cb8f8193f60d4c2de172347",
+            "cuisines": [
+                "Snacks",
+                "Fast Food",
+                "Beverages"
+            ],
+            "tags": [],
+            "costForTwo": 15000,
+            "costForTwoString": "₹150 FOR TWO",
+            "deliveryTime": 38,
+            "minDeliveryTime": 35,
+            "maxDeliveryTime": 45,
+            "slaString": "35-45 MINS",
+            "lastMileTravel": 2.0999999046325684,
+            "slugs": {
+                "restaurant": "easy-bites-central-bangalore-central-bangalore",
+                "city": "bangalore"
+            },
+            "cityState": "1",
+            "address": "No.35,Castel Street,Bangalore-560025,District-B.B.M.P East,STATE-Karnataka",
+            "locality": "Castel Street",
+            "parentId": 8503,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "50% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "50% off | Use WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "50% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "ribbon": [
+                {
+                    "type": "PROMOTED"
+                }
+            ],
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "cid=5855585~p=1~eid=00000186-25b9-ae7f-1287-ca33004e0164",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "2 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "279735",
+                "deliveryTime": 38,
+                "minDeliveryTime": 35,
+                "maxDeliveryTime": 45,
+                "lastMileTravel": 2.0999999046325684,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": true,
+            "avgRating": "4.1",
+            "totalRatings": 100,
+            "new": false
+        },
+        "subtype": "basic"
     },
     {
-        id: 2,
-        name: `KFC`,
-        imgUrl: "https://www.shutterstock.com/image-photo/kiev-ukraine-september-21-2019-260nw-1510251329.jpg",
-        cuisine: `American`,
-        rating: 4.1,
-        time: `30 mins`,
-        price: `₹ 800 for 2`
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "3241",
+            "name": "Meghana Foods",
+            "uuid": "93695df0-56e1-417e-b9a8-32084ebaadaf",
+            "city": "1",
+            "area": "Ashok Nagar",
+            "totalRatingsString": "1000+ ratings",
+            "cloudinaryImageId": "e0vvulfbahjxjz6k4uwi",
+            "cuisines": [
+                "Biryani",
+                "Andhra",
+                "South Indian",
+                "North Indian",
+                "Chinese",
+                "Seafood"
+            ],
+            "tags": [],
+            "costForTwo": 50000,
+            "costForTwoString": "₹500 FOR TWO",
+            "deliveryTime": 37,
+            "minDeliveryTime": 35,
+            "maxDeliveryTime": 45,
+            "slaString": "35-45 MINS",
+            "lastMileTravel": 2.4000000953674316,
+            "slugs": {
+                "restaurant": "meghana-foods-central-bangalore",
+                "city": "bangalore"
+            },
+            "cityState": "1",
+            "address": "57/1, 1st Floor, Jayalaxmi Chambers, Next to Old Galaxy Theatre,Residency Road, Bangalore",
+            "locality": "Residency Road",
+            "parentId": 635,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "50% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "50% off | Use WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "50% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "2.4 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "3241",
+                "deliveryTime": 37,
+                "minDeliveryTime": 35,
+                "maxDeliveryTime": 45,
+                "lastMileTravel": 2.4000000953674316,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "4.5",
+            "totalRatings": 1000,
+            "new": false
+        },
+        "subtype": "basic"
     },
     {
-        id: 3,
-        name: `Subway`,
-        imgUrl: "https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/u2gzcokcmokuqqj6sumz",
-        cuisine: `American`,
-        rating: 3.2,
-        time: `45 mins`,
-        price: `₹ 1000 for 2`
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "47493",
+            "name": "Hari Super Sandwich (3rd Block)",
+            "uuid": "97798836-f15a-4566-bdeb-7e4d1b0eac20",
+            "city": "1",
+            "area": "Jayanagar",
+            "totalRatingsString": "1000+ ratings",
+            "cloudinaryImageId": "ml1ituszk5qurjia3r9h",
+            "cuisines": [
+                "Chaat",
+                "Snacks",
+                "Pizzas",
+                "North Indian",
+                "Indian"
+            ],
+            "tags": [],
+            "costForTwo": 10000,
+            "costForTwoString": "₹100 FOR TWO",
+            "deliveryTime": 48,
+            "minDeliveryTime": 45,
+            "maxDeliveryTime": 55,
+            "slaString": "45-55 MINS",
+            "lastMileTravel": 5,
+            "slugs": {
+                "restaurant": "hari-super-sandwich-jayanagar-jayanagar",
+                "city": "bangalore"
+            },
+            "cityState": "1",
+            "address": "No 177/A 22nd cross 3rd block Jayanagar Bangalore 560011",
+            "locality": "3rd Block",
+            "parentId": 352495,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "50% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "50% off | Use WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "50% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code WELCOME50",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "5 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "47493",
+                "deliveryTime": 48,
+                "minDeliveryTime": 45,
+                "maxDeliveryTime": 55,
+                "lastMileTravel": 5,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "4.0",
+            "totalRatings": 1000,
+            "new": false
+        },
+        "subtype": "basic"
     },
     {
-        id: 4,
-        name: `Meghna's Biryani`,
-        imgUrl: "https://1.bp.blogspot.com/-sxvFHMrLgrI/XY-T7xKtbZI/AAAAAAAASjw/mX3Ineip_awraDf7mAvdOD8hfuvsowxnwCLcBGAsYHQ/s1600/Mutton-Biryani-Recipe.jpg",
-        cuisine: `Indian`,
-        rating: 4.6,
-        time: `35 mins`,
-        price: `₹ 600 for 2`
-    },
-    {
-        id: 5,
-        name: `The Dessert Shop`,
-        imgUrl: "https://insanelygoodrecipes.com/wp-content/uploads/2021/05/Cherry-Cheesecake-with-Berry-Sauce.png",
-        cuisine: `Indian, American`,
-        rating: 4.0,
-        time: `30 mins`,
-        price: `₹ 300 for 2`
-    },
-    {
-        id: 6,
-        name: `Udupi`,
-        imgUrl: "https://static.toiimg.com/thumb/63841432.cms?imgsize=1151127&width=800&height=800",
-        cuisine: `South Indian`,
-        rating: 3.7,
-        time: `20 mins`,
-        price: `₹ 300 for 2`
-    },
-    {
-        id: 7,
-        name: `Baskin Robbins`,
-        imgUrl: "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/z/k/p57-1493963360590c1260a797f.jpg",
-        cuisine: `Indian`,
-        rating: 4.2,
-        time: `10 mins`,
-        price: `₹ 200 for 2`
-    },
-    {
-        id: 8,
-        name: `Dragon's den`,
-        imgUrl: "https://www.cookwithmanali.com/wp-content/uploads/2014/11/Hakka-Noodles-1.jpg",
-        cuisine: `Chinese`,
-        rating: 4.7,
-        time: `40 mins`,
-        price: `₹ 500 for 2`
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "210945",
+            "name": "Royal Restaurant",
+            "uuid": "9b33bca4-65e6-4a26-af3e-f47c4476ed4d",
+            "city": "1",
+            "area": "Shivajinagar",
+            "totalRatingsString": "500+ ratings",
+            "cloudinaryImageId": "yicweopn4lzcjlqy4jvq",
+            "cuisines": [
+                "Chinese",
+                "North Indian",
+                "Tandoor"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 38,
+            "minDeliveryTime": 35,
+            "maxDeliveryTime": 45,
+            "slaString": "35-45 MINS",
+            "lastMileTravel": 2.5999999046325684,
+            "slugs": {
+                "restaurant": "royal-restaurant-central-bangalore-central-bangalore",
+                "city": "bangalore"
+            },
+            "cityState": "1",
+            "address": "Broadway Road Police Station, HKP Road, Sulthangunta, Shivajinagar, Bengaluru, Bangalore Urban, Karnataka, India",
+            "locality": "Sulthangunta",
+            "parentId": 2896,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "35% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "35% off on all orders",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    },
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "35% off on all orders",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    },
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "35% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Free Delivery",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "35% off on all orders",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    },
+                    {
+                        "meta": "FREE DELIVERY",
+                        "discountType": "FREE_DELIVERY",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [],
+                "totalFees": 0,
+                "message": "",
+                "title": "",
+                "amount": "",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "2.5 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "210945",
+                "deliveryTime": 38,
+                "minDeliveryTime": 35,
+                "maxDeliveryTime": 45,
+                "lastMileTravel": 2.5999999046325684,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "4.0",
+            "totalRatings": 500,
+            "new": false
+        },
+        "subtype": "basic"
     }
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8pPOA":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactShimmerEffects = require("react-shimmer-effects");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmerEffects.ShimmerPostList), {
+        postStyle: "STYLE_FIVE",
+        col: 4,
+        row: 2,
+        gap: 30,
+        className: "shimmer-style"
+    }, void 0, false, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 5,
+        columnNumber: 12
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-shimmer-effects":"5ORgO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5ORgO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ShimmerButton", ()=>ShimmerButton);
+parcelHelpers.export(exports, "ShimmerCircularImage", ()=>ShimmerCircularImage);
+parcelHelpers.export(exports, "ShimmerThumbnail", ()=>ShimmerThumbnail);
+parcelHelpers.export(exports, "ShimmerCard", ()=>ShimmerCard);
+parcelHelpers.export(exports, "ShimmerSimpleGallery", ()=>ShimmerSimpleGallery);
+parcelHelpers.export(exports, "ShimmerFeaturedGallery", ()=>ShimmerFeaturedGallery);
+parcelHelpers.export(exports, "ShimmerTable", ()=>ShimmerTable);
+parcelHelpers.export(exports, "ShimmerTableCol", ()=>ShimmerTableCol);
+parcelHelpers.export(exports, "ShimmerTableRow", ()=>ShimmerTableRow);
+parcelHelpers.export(exports, "ShimmerBadge", ()=>ShimmerBadge);
+parcelHelpers.export(exports, "ShimmerText", ()=>ShimmerText);
+parcelHelpers.export(exports, "ShimmerTitle", ()=>ShimmerTitle);
+parcelHelpers.export(exports, "ShimmerSocialPost", ()=>ShimmerSocialPost);
+parcelHelpers.export(exports, "ShimmerSeparator", ()=>ShimmerSeparator);
+parcelHelpers.export(exports, "ShimmerCategoryItem", ()=>ShimmerCategoryItem);
+parcelHelpers.export(exports, "ShimmerCategoryList", ()=>ShimmerCategoryList);
+parcelHelpers.export(exports, "ShimmerPostItem", ()=>ShimmerPostItem);
+parcelHelpers.export(exports, "ShimmerPostDetails", ()=>ShimmerPostDetails);
+parcelHelpers.export(exports, "ShimmerPostList", ()=>ShimmerPostList);
+parcelHelpers.export(exports, "ShimmerContentBlock", ()=>ShimmerContentBlock);
+parcelHelpers.export(exports, "ShimmerSectionHeader", ()=>ShimmerSectionHeader);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+function createCommonjsModule(fn, module) {
+    return module = {
+        exports: {}
+    }, fn(module, module.exports), module.exports;
+}
+var classnames = createCommonjsModule(function(module) {
+    /*!
+  Copyright (c) 2018 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/ /* global define */ (function() {
+        var hasOwn = {}.hasOwnProperty;
+        function classNames() {
+            var classes = [];
+            for(var i = 0; i < arguments.length; i++){
+                var arg = arguments[i];
+                if (!arg) continue;
+                var argType = typeof arg;
+                if (argType === "string" || argType === "number") classes.push(arg);
+                else if (Array.isArray(arg)) {
+                    if (arg.length) {
+                        var inner = classNames.apply(null, arg);
+                        if (inner) classes.push(inner);
+                    }
+                } else if (argType === "object") {
+                    if (arg.toString === Object.prototype.toString) {
+                        for(var key in arg)if (hasOwn.call(arg, key) && arg[key]) classes.push(key);
+                    } else classes.push(arg.toString());
+                }
+            }
+            return classes.join(" ");
+        }
+        if (module.exports) {
+            classNames.default = classNames;
+            module.exports = classNames;
+        } else window.classNames = classNames;
+    })();
+});
+function styleInject(css, ref) {
+    if (ref === void 0) ref = {};
+    var insertAt = ref.insertAt;
+    if (!css || typeof document === "undefined") return;
+    var head = document.head || document.getElementsByTagName("head")[0];
+    var style = document.createElement("style");
+    style.type = "text/css";
+    if (insertAt === "top") {
+        if (head.firstChild) head.insertBefore(style, head.firstChild);
+        else head.appendChild(style);
+    } else head.appendChild(style);
+    if (style.styleSheet) style.styleSheet.cssText = css;
+    else style.appendChild(document.createTextNode(css));
+}
+var css = ".shimmer-button {\n  border-radius: 4px;\n  height: 38px;\n  width: 120px;\n  margin-bottom: 20px; }\n  .shimmer-button--sm {\n    border-radius: 3px;\n    height: 31px;\n    width: 100px; }\n  .shimmer-button--lg {\n    height: 48px;\n    width: 140px;\n    border-radius: 5px; }\n";
+styleInject(css);
+var defineProperty = function(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+};
+var ShimmerButton = function ShimmerButton(_ref) {
+    var size = _ref.size;
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames(defineProperty({
+            "shimmer shimmer-button": true
+        }, "shimmer-button--" + size, true))
+    });
+};
+ShimmerButton.propTypes = {
+    size: (0, _propTypesDefault.default).oneOf([
+        "lg",
+        "md",
+        "sm"
+    ])
+};
+ShimmerButton.defaultProps = {
+    size: "md"
+};
+var ShimmerCircularImage = function ShimmerCircularImage(_ref) {
+    var size = _ref.size, center = _ref.center, className = _ref.className;
+    var style = {};
+    if (size) {
+        style.width = size + "px";
+        style.height = size + "px";
+    }
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames({
+            "text-center": center
+        })
+    }, (0, _reactDefault.default).createElement("div", {
+        style: style,
+        className: classnames(defineProperty({
+            "shimmer shimmer-avatar": true
+        }, className, className))
+    }));
+};
+ShimmerCircularImage.propTypes = {
+    size: (0, _propTypesDefault.default).number,
+    center: (0, _propTypesDefault.default).bool,
+    className: (0, _propTypesDefault.default).string
+};
+ShimmerCircularImage.defaultProps = {
+    center: false,
+    size: 80
+};
+var ShimmerThumbnail = function ShimmerThumbnail(_ref) {
+    var height = _ref.height, width = _ref.width, center = _ref.center, className = _ref.className, fitOnFrame = _ref.fitOnFrame, rounded = _ref.rounded;
+    var style = {};
+    if (height) style.height = height + "px";
+    if (width) style.width = width + "px";
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames({
+            "h-100": fitOnFrame,
+            "text-center ": center
+        })
+    }, (0, _reactDefault.default).createElement("div", {
+        className: classnames(defineProperty({
+            "h-100": fitOnFrame,
+            "shimmer shimmer-thumbnail": true,
+            "border-rounded": rounded
+        }, className, className)),
+        style: style
+    }));
+};
+ShimmerThumbnail.propTypes = {
+    height: (0, _propTypesDefault.default).number,
+    width: (0, _propTypesDefault.default).number,
+    center: (0, _propTypesDefault.default).bool,
+    className: (0, _propTypesDefault.default).string,
+    fitOnFrame: (0, _propTypesDefault.default).bool,
+    rounded: (0, _propTypesDefault.default).bool
+};
+ShimmerThumbnail.defaultProps = {
+    canter: false,
+    fitOnFrame: false,
+    rounded: false,
+    height: 250
+};
+var css$1 = ".shimmer-avatar {\n  width: 80px;\n  height: 80px;\n  border-radius: 50%;\n  margin-bottom: 20px;\n  display: inline-block; }\n\n.shimmer-thumbnail {\n  min-width: 80px;\n  width: 100%;\n  height: 200px;\n  margin-bottom: 20px;\n  display: inline-block; }\n";
+styleInject(css$1);
+var css$2 = ".shimmer-title {\n  margin-bottom: 20px; }\n  .shimmer-title--secondary {\n    margin-bottom: 20px; }\n    .shimmer-title--secondary .shimmer-title-line {\n      height: 16px; }\n  .shimmer-title-line {\n    width: 100%;\n    height: 24px;\n    border-radius: 20px; }\n    .shimmer-title-line:first-child {\n      width: 100% !important; }\n    .shimmer-title-line:last-child {\n      width: 40%; }\n";
+styleInject(css$2);
+var ShimmerTitle = function ShimmerTitle(_ref) {
+    var _classNames;
+    var line = _ref.line, gap = _ref.gap, variant = _ref.variant, className = _ref.className;
+    var renderLines = function renderLines() {
+        var title_lines = [];
+        for(var index = 0; index < line; index++)title_lines.push((0, _reactDefault.default).createElement("div", {
+            className: "shimmer shimmer-title-line",
+            key: index
+        }));
+        return title_lines;
+    };
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames((_classNames = {
+            grid: true,
+            "shimmer-title": variant === "primary",
+            "shimmer-title--secondary": variant === "secondary"
+        }, defineProperty(_classNames, "grid-gap-" + gap, gap), defineProperty(_classNames, className, className), _classNames))
+    }, renderLines());
+};
+ShimmerTitle.propTypes = {
+    line: (0, _propTypesDefault.default).number,
+    gap: (0, _propTypesDefault.default).oneOf([
+        10,
+        15,
+        20,
+        30
+    ]),
+    variant: (0, _propTypesDefault.default).oneOf([
+        "primary",
+        "secondary"
+    ]),
+    className: (0, _propTypesDefault.default).string
+};
+ShimmerTitle.defaultProps = {
+    line: 2,
+    gap: 10,
+    variant: "primary"
+};
+var css$3 = ".shimmer-card {\n  border-radius: 8px;\n  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);\n  background-color: #ffffff;\n  width: 100%; }\n  .shimmer-card:not(:first-child) {\n    margin-top: 30px; }\n  .shimmer-card--content-center {\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .shimmer-card--content-center * {\n      width: 100%;\n      margin: auto; }\n";
+styleInject(css$3);
+var ShimmerCard = function ShimmerCard(_ref) {
+    var _classNames;
+    var children = _ref.children, className = _ref.className, paddingSize = _ref.paddingSize;
+    if (!children) return null;
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames((_classNames = {
+            "shimmer-card": true
+        }, defineProperty(_classNames, "p-" + paddingSize, paddingSize), defineProperty(_classNames, className, className), _classNames))
+    }, children);
+};
+ShimmerCard.propTypes = {
+    className: (0, _propTypesDefault.default).string,
+    children: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).element,
+        (0, _propTypesDefault.default).array
+    ]).isRequired,
+    paddingSize: (0, _propTypesDefault.default).oneOf([
+        false,
+        20,
+        30
+    ])
+};
+ShimmerCard.defaultProps = {
+    paddingSize: false
+};
+var ShimmerSimpleGallery = function ShimmerSimpleGallery(_ref) {
+    var _classNames, _classNames2;
+    var row = _ref.row, col = _ref.col, gap = _ref.gap, className = _ref.className, fitOnFrame = _ref.fitOnFrame, imageType = _ref.imageType, imageHeight = _ref.imageHeight, caption = _ref.caption, card = _ref.card;
+    var renderPhotos = function renderPhotos() {
+        var photos = [];
+        var items = row * col;
+        for(var index = 0; index < items; index++)photos.push((0, _reactDefault.default).createElement("div", {
+            key: index
+        }, imageType === "thumbnail" && (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+            key: index,
+            fitOnFrame: fitOnFrame,
+            height: imageHeight,
+            className: classnames({
+                "m-0": true
+            })
+        }), imageType === "circular" && (0, _reactDefault.default).createElement(ShimmerCircularImage, {
+            size: imageHeight,
+            center: true
+        }), caption && (0, _reactDefault.default).createElement(ShimmerTitle, {
+            variant: "secondary",
+            className: classnames({
+                "mt-15": imageType === "thumbnail",
+                "w-50 ml-auto mr-auto circular-image-caption": imageType === "circular"
+            })
+        })));
+        return photos;
+    };
+    if (!card) return (0, _reactDefault.default).createElement("div", {
+        className: classnames((_classNames = {
+            grid: true
+        }, defineProperty(_classNames, "grid-gap-" + gap, true), defineProperty(_classNames, "grid-column-" + col, true), defineProperty(_classNames, className, className), _classNames))
+    }, renderPhotos());
+    return (0, _reactDefault.default).createElement(ShimmerCard, {
+        paddingSize: 20
+    }, (0, _reactDefault.default).createElement("div", {
+        className: classnames((_classNames2 = {
+            grid: true
+        }, defineProperty(_classNames2, "grid-gap-" + gap, true), defineProperty(_classNames2, "grid-column-" + col, true), defineProperty(_classNames2, className, className), _classNames2))
+    }, renderPhotos()));
+};
+ShimmerSimpleGallery.propTypes = {
+    row: (0, _propTypesDefault.default).number,
+    col: (0, _propTypesDefault.default).oneOf([
+        2,
+        3,
+        4
+    ]),
+    gap: (0, _propTypesDefault.default).oneOf([
+        20,
+        30
+    ]),
+    fitOnFrame: (0, _propTypesDefault.default).bool,
+    imageType: (0, _propTypesDefault.default).oneOf([
+        "thumbnail",
+        "circular"
+    ]),
+    imageHeight: (0, _propTypesDefault.default).number,
+    caption: (0, _propTypesDefault.default).bool,
+    card: (0, _propTypesDefault.default).bool
+};
+ShimmerSimpleGallery.defaultProps = {
+    row: 3,
+    col: 3,
+    gap: 20,
+    fitOnFrame: false,
+    imageType: "thumbnail",
+    caption: false,
+    card: false
+};
+var css$4 = ".shimmer-gallery-puzzle {\n  height: 540px; }\n\n.circular-image-caption .shimmer-title-line {\n  margin: auto; }\n";
+styleInject(css$4);
+var ShimmerFeaturedGallery = function ShimmerFeaturedGallery(_ref) {
+    var row = _ref.row, col = _ref.col, gap = _ref.gap, card = _ref.card, frameHeight = _ref.frameHeight;
+    var style = {};
+    if (frameHeight) style.height = frameHeight + "px";
+    var renderContent = function renderContent() {
+        return (0, _reactDefault.default).createElement("div", {
+            className: "shimmer-row shimmer-gallery-puzzle",
+            style: style
+        }, (0, _reactDefault.default).createElement("div", {
+            className: "shimmer-col flex-1"
+        }, (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+            className: "h-100",
+            fitOnFrame: true
+        })), (0, _reactDefault.default).createElement("div", {
+            className: "shimmer-col flex-1"
+        }, (0, _reactDefault.default).createElement(ShimmerSimpleGallery, {
+            row: row,
+            col: col,
+            gap: gap,
+            className: "h-100",
+            fitOnFrame: true
+        })));
+    };
+    if (!card) return renderContent();
+    return (0, _reactDefault.default).createElement(ShimmerCard, {
+        paddingSize: 20
+    }, renderContent());
+};
+ShimmerFeaturedGallery.propTypes = {
+    row: (0, _propTypesDefault.default).number,
+    col: (0, _propTypesDefault.default).oneOf([
+        2,
+        3,
+        4
+    ]),
+    gap: (0, _propTypesDefault.default).oneOf([
+        20,
+        30
+    ]),
+    card: (0, _propTypesDefault.default).bool,
+    frameHeight: (0, _propTypesDefault.default).number
+};
+ShimmerFeaturedGallery.defaultProps = {
+    card: false,
+    row: 2,
+    col: 2,
+    gap: 20,
+    frameHeight: 600
+};
+var ShimmerTableCol = function ShimmerTableCol() {
+    return (0, _reactDefault.default).createElement("div", {
+        className: "shimmer shimmer-table-col"
+    });
+};
+var ShimmerTableRow = function ShimmerTableRow(_ref) {
+    var col = _ref.col, header = _ref.header;
+    var renderColumns = function renderColumns() {
+        var columns = [];
+        for(var index = 0; index < col; index++)columns.push((0, _reactDefault.default).createElement(ShimmerTableCol, {
+            key: index
+        }));
+        return columns;
+    };
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames({
+            "shimmer-table-row": true,
+            "shimmer-table-row--header": header
+        })
+    }, renderColumns());
+};
+ShimmerTableRow.propTypes = {
+    col: (0, _propTypesDefault.default).number.isRequired,
+    header: (0, _propTypesDefault.default).bool
+};
+ShimmerTableRow.defaultProps = {
+    col: 5,
+    header: false
+};
+var css$5 = ".shimmer-table-row {\n  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);\n  display: flex;\n  padding: 25px 0;\n  background-color: #ffffff;\n  border-radius: 5px;\n  margin-bottom: 20px; }\n  .shimmer-table-row--header {\n    background-color: transparent;\n    box-shadow: none;\n    margin: 0; }\n  .shimmer-table-row > .shimmer {\n    margin: 0 30px; }\n\n.shimmer-table-col {\n  width: 100%;\n  height: 10px;\n  border-radius: 10px; }\n";
+styleInject(css$5);
+var ShimmerTable = function ShimmerTable(_ref) {
+    var row = _ref.row, col = _ref.col;
+    var renderRows = function renderRows() {
+        var rows = [];
+        for(var index = 0; index < row; index++)rows.push((0, _reactDefault.default).createElement(ShimmerTableRow, {
+            col: col,
+            key: index
+        }));
+        return rows;
+    };
+    return (0, _reactDefault.default).createElement("div", null, (0, _reactDefault.default).createElement(ShimmerTableRow, {
+        col: col,
+        header: true
+    }), renderRows());
+};
+ShimmerTable.propTypes = {
+    row: (0, _propTypesDefault.default).number,
+    col: (0, _propTypesDefault.default).number
+};
+ShimmerTable.defaultProps = {
+    row: 5,
+    col: 5
+};
+var css$6 = ".shimmer-badge {\n  width: 80px;\n  height: 24px;\n  border-radius: 20px;\n  margin-bottom: 20px; }\n";
+styleInject(css$6);
+var ShimmerBadge = function ShimmerBadge(_ref) {
+    var width = _ref.width;
+    var style = {};
+    if (width) style.width = width + "px";
+    return (0, _reactDefault.default).createElement("div", {
+        className: "shimmer shimmer-badge",
+        style: style
+    });
+};
+ShimmerBadge.propTypes = {
+    width: (0, _propTypesDefault.default).number
+};
+var css$7 = ".shimmer-text {\n  margin-bottom: 30px; }\n  .shimmer-text-line {\n    width: 100%;\n    height: 8px;\n    border-radius: 10px; }\n    .shimmer-text-line:first-child {\n      width: 100% !important; }\n    .shimmer-text-line:last-child {\n      width: 40%; }\n";
+styleInject(css$7);
+var ShimmerText = function ShimmerText(_ref) {
+    var _classNames;
+    var line = _ref.line, gap = _ref.gap, className = _ref.className;
+    var renderLines = function renderLines() {
+        var text_lines = [];
+        for(var index = 0; index < line; index++)text_lines.push((0, _reactDefault.default).createElement("div", {
+            className: "shimmer shimmer-text-line",
+            key: index
+        }));
+        return text_lines;
+    };
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames((_classNames = {
+            "grid shimmer-text": true
+        }, defineProperty(_classNames, "grid-gap-" + gap, gap), defineProperty(_classNames, className, className), _classNames))
+    }, renderLines());
+};
+ShimmerText.propTypes = {
+    line: (0, _propTypesDefault.default).number,
+    gap: (0, _propTypesDefault.default).oneOf([
+        10,
+        15,
+        20,
+        30
+    ]),
+    className: (0, _propTypesDefault.default).string
+};
+ShimmerText.defaultProps = {
+    line: 5,
+    gap: 15
+};
+var css$8 = ".shimmer-separator {\n  height: 1px;\n  background-color: #dddddd;\n  margin: 40px 0; }\n";
+styleInject(css$8);
+var ShimmerSeparator = function ShimmerSeparator() {
+    return (0, _reactDefault.default).createElement("div", {
+        className: "shimmer-separator"
+    });
+};
+var ShimmerSocialPost = function ShimmerSocialPost(_ref) {
+    var type = _ref.type, title = _ref.title;
+    var renderContents = function renderContents() {
+        if (type === "image") return (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+            height: 300,
+            className: "m-02"
+        });
+        else if (type === "text") return (0, _reactDefault.default).createElement(ShimmerText, {
+            line: 13,
+            className: "p-15"
+        });
+        else return (0, _reactDefault.default).createElement("div", null, (0, _reactDefault.default).createElement(ShimmerText, {
+            line: 3,
+            className: "p-15"
+        }), (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+            height: 300,
+            className: "m-02"
+        }));
+    };
+    return (0, _reactDefault.default).createElement(ShimmerCard, null, (0, _reactDefault.default).createElement("div", {
+        className: "p-15"
+    }, (0, _reactDefault.default).createElement("div", {
+        className: "flex"
+    }, (0, _reactDefault.default).createElement(ShimmerCircularImage, null), (0, _reactDefault.default).createElement("div", {
+        className: "flex-1 p-15"
+    }, (0, _reactDefault.default).createElement(ShimmerTitle, {
+        variant: "secondary",
+        className: "w-40"
+    }))), title && (0, _reactDefault.default).createElement(ShimmerTitle, {
+        line: 1,
+        className: "w-40 m-0"
+    })), renderContents(), (0, _reactDefault.default).createElement("div", {
+        className: "p-15 flex flex-content-between"
+    }, (0, _reactDefault.default).createElement(ShimmerTitle, {
+        line: 1,
+        className: "w-10",
+        variant: "secondary"
+    }), (0, _reactDefault.default).createElement(ShimmerTitle, {
+        line: 1,
+        className: "w-10",
+        variant: "secondary"
+    })));
+};
+ShimmerSocialPost.propTypes = {
+    type: (0, _propTypesDefault.default).oneOf([
+        "text",
+        "image",
+        "both"
+    ]),
+    title: (0, _propTypesDefault.default).bool
+};
+ShimmerSocialPost.defaultProps = {
+    type: "image",
+    title: false
+};
+var ShimmerCategoryItem = function ShimmerCategoryItem(_ref) {
+    var hasImage = _ref.hasImage, imageType = _ref.imageType, imageWidth = _ref.imageWidth, imageHeight = _ref.imageHeight, title = _ref.title, text = _ref.text, cta = _ref.cta, contentCenter = _ref.contentCenter;
+    return (0, _reactDefault.default).createElement("div", null, !hasImage ? (0, _reactDefault.default).createElement("div", null, (0, _reactDefault.default).createElement(ShimmerTitle, {
+        variant: "secondary",
+        line: 1,
+        className: "mb-15 w-80"
+    }), (0, _reactDefault.default).createElement("div", {
+        className: "w-40"
+    }, (0, _reactDefault.default).createElement(ShimmerText, {
+        line: 3,
+        gap: 10
+    }))) : (0, _reactDefault.default).createElement("div", {
+        className: classnames({
+            flex: true,
+            "flex-vertical-center": contentCenter
+        })
+    }, imageType === "thumbnail" && (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+        width: imageWidth,
+        height: imageHeight
+    }), imageType === "circular" && (0, _reactDefault.default).createElement(ShimmerCircularImage, {
+        size: imageWidth
+    }), (0, _reactDefault.default).createElement("div", {
+        className: "flex-1 p-15"
+    }, title && (0, _reactDefault.default).createElement(ShimmerTitle, {
+        variant: "secondary"
+    }), text && (0, _reactDefault.default).createElement(ShimmerText, {
+        line: 3,
+        gap: 10,
+        className: "mb-20"
+    }), cta && (0, _reactDefault.default).createElement(ShimmerButton, {
+        size: "sm"
+    }))));
+};
+ShimmerCategoryItem.propTypes = {
+    hasImage: (0, _propTypesDefault.default).bool.isRequired,
+    imageType: (0, _propTypesDefault.default).oneOf([
+        "circular",
+        "thumbnail"
+    ]),
+    imageWidth: (0, _propTypesDefault.default).number,
+    imageHeight: (0, _propTypesDefault.default).number,
+    title: (0, _propTypesDefault.default).bool,
+    text: (0, _propTypesDefault.default).bool,
+    cta: (0, _propTypesDefault.default).bool,
+    contentCenter: (0, _propTypesDefault.default).bool
+};
+ShimmerCategoryItem.defaultProps = {
+    hasImage: false,
+    imageType: "thumbnail",
+    title: false,
+    text: false,
+    contentCenter: false
+};
+var ShimmerCategoryList = function ShimmerCategoryList(_ref) {
+    var items = _ref.items, categoryStyle = _ref.categoryStyle, title = _ref.title;
+    var categories = {
+        STYLE_ONE: (0, _reactDefault.default).createElement(ShimmerCategoryItem, null),
+        STYLE_TWO: (0, _reactDefault.default).createElement(ShimmerCategoryItem, {
+            hasImage: true,
+            imageType: "thumbnail",
+            imageWidth: 100,
+            imageHeight: 100,
+            title: true
+        }),
+        STYLE_THREE: (0, _reactDefault.default).createElement(ShimmerCategoryItem, {
+            hasImage: true,
+            imageType: "circular",
+            imageWidth: 100,
+            imageHeight: 100,
+            title: true
+        }),
+        STYLE_FOUR: (0, _reactDefault.default).createElement(ShimmerCategoryItem, {
+            hasImage: true,
+            imageType: "thumbnail",
+            imageWidth: 100,
+            imageHeight: 100,
+            text: true
+        }),
+        STYLE_FIVE: (0, _reactDefault.default).createElement(ShimmerCategoryItem, {
+            hasImage: true,
+            imageType: "circular",
+            imageWidth: 100,
+            imageHeight: 100,
+            text: true
+        }),
+        STYLE_SIX: (0, _reactDefault.default).createElement(ShimmerCategoryItem, {
+            hasImage: true,
+            imageType: "thumbnail",
+            imageWidth: 100,
+            imageHeight: 100,
+            text: true,
+            cta: true
+        }),
+        STYLE_SEVEN: (0, _reactDefault.default).createElement(ShimmerCategoryItem, {
+            hasImage: true,
+            imageType: "circular",
+            imageWidth: 100,
+            imageHeight: 100,
+            text: true,
+            cta: true
+        })
+    };
+    var renderItems = function renderItems() {
+        var list = [];
+        for(var index = 0; index < items; index++)list.push((0, _reactDefault.default).createElement("div", {
+            key: index
+        }, categories[categoryStyle]));
+        return list;
+    };
+    return (0, _reactDefault.default).createElement(ShimmerCard, {
+        paddingSize: 20
+    }, title && (0, _reactDefault.default).createElement(ShimmerTitle, {
+        line: 1,
+        className: "w-60"
+    }), renderItems());
+};
+ShimmerCategoryList.propTypes = {
+    title: (0, _propTypesDefault.default).bool,
+    items: (0, _propTypesDefault.default).number,
+    categoryStyle: (0, _propTypesDefault.default).oneOf([
+        "STYLE_ONE",
+        "STYLE_TWO",
+        "STYLE_THREE",
+        "STYLE_FOUR",
+        "STYLE_FIVE",
+        "STYLE_SIX",
+        "STYLE_SEVEN"
+    ])
+};
+ShimmerCategoryList.defaultProps = {
+    title: false,
+    items: 5,
+    categoryStyle: "STYLE_ONE"
+};
+var ShimmerPostDetails = function ShimmerPostDetails(_ref) {
+    var variant = _ref.variant, cta = _ref.cta, card = _ref.card;
+    var variants = {
+        SIMPLE: (0, _reactDefault.default).createElement("div", null, (0, _reactDefault.default).createElement(ShimmerTitle, {
+            line: 1,
+            className: "w-40"
+        }), (0, _reactDefault.default).createElement(ShimmerTitle, {
+            line: 1,
+            variant: "secondary",
+            className: "w-20 mb-40"
+        }), (0, _reactDefault.default).createElement("div", {
+            className: "w-40 mb-40"
+        }, (0, _reactDefault.default).createElement(ShimmerText, {
+            line: 1,
+            className: "mb-15 w-20"
+        }), (0, _reactDefault.default).createElement(ShimmerText, {
+            line: 1,
+            className: "mb-15 w-40"
+        }), (0, _reactDefault.default).createElement(ShimmerText, {
+            line: 1,
+            className: "mb-30 w-60"
+        })), (0, _reactDefault.default).createElement(ShimmerTitle, {
+            line: 1,
+            variant: "secondary",
+            className: "w-30"
+        }), (0, _reactDefault.default).createElement(ShimmerText, {
+            className: "mb-40"
+        }), (0, _reactDefault.default).createElement(ShimmerTitle, {
+            line: 1,
+            variant: "secondary",
+            className: "w-30"
+        }), (0, _reactDefault.default).createElement(ShimmerText, {
+            className: "mb-40"
+        }), (0, _reactDefault.default).createElement(ShimmerTitle, {
+            line: 1,
+            variant: "secondary",
+            className: "w-30"
+        }), (0, _reactDefault.default).createElement(ShimmerText, {
+            className: "mb-40"
+        }), (0, _reactDefault.default).createElement(ShimmerTitle, {
+            line: 1,
+            variant: "secondary",
+            className: "w-30"
+        }), (0, _reactDefault.default).createElement(ShimmerText, {
+            className: "mb-40"
+        }), cta && (0, _reactDefault.default).createElement(ShimmerButton, null)),
+        EDITOR: (0, _reactDefault.default).createElement("div", null, (0, _reactDefault.default).createElement(ShimmerTitle, {
+            line: 1,
+            className: "w-40"
+        }), (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+            height: 400
+        }), (0, _reactDefault.default).createElement(ShimmerText, null), (0, _reactDefault.default).createElement(ShimmerText, null), (0, _reactDefault.default).createElement("div", {
+            className: "shimmer-row"
+        }, (0, _reactDefault.default).createElement("div", {
+            className: "shimmer-col"
+        }, (0, _reactDefault.default).createElement(ShimmerText, {
+            line: 13
+        })), (0, _reactDefault.default).createElement("div", {
+            className: "shimmer-col"
+        }, (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+            height: 300
+        }))), (0, _reactDefault.default).createElement(ShimmerText, null), (0, _reactDefault.default).createElement(ShimmerText, null), (0, _reactDefault.default).createElement(ShimmerText, null))
+    };
+    if (!card) return variants[variant];
+    return (0, _reactDefault.default).createElement(ShimmerCard, {
+        paddingSize: 30
+    }, variants[variant]);
+};
+ShimmerPostDetails.propTypes = {
+    variant: (0, _propTypesDefault.default).oneOf([
+        "SIMPLE",
+        "EDITOR"
+    ]),
+    cta: (0, _propTypesDefault.default).bool,
+    card: (0, _propTypesDefault.default).bool
+};
+ShimmerPostDetails.defaultProps = {
+    variant: "SIMPLE",
+    cta: false,
+    card: false
+};
+var ShimmerPostItem = function ShimmerPostItem(_ref) {
+    var cta = _ref.cta, title = _ref.title, text = _ref.text, imageType = _ref.imageType, imageWidth = _ref.imageWidth, imageHeight = _ref.imageHeight;
+    return (0, _reactDefault.default).createElement(ShimmerCard, null, imageType === "thumbnail" && (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+        height: imageHeight,
+        width: imageWidth,
+        className: imageWidth && imageWidth !== "w-100" ? "m-30 mb-0" : "mb-0"
+    }), imageType === "circular" && (0, _reactDefault.default).createElement(ShimmerCircularImage, {
+        size: imageWidth,
+        className: "m-30 mb-0"
+    }), (0, _reactDefault.default).createElement("div", {
+        className: "p-30"
+    }, title && (0, _reactDefault.default).createElement(ShimmerTitle, {
+        variant: "secondary"
+    }), text && (0, _reactDefault.default).createElement(ShimmerText, {
+        line: 3,
+        gap: 10
+    }), cta && (0, _reactDefault.default).createElement(ShimmerButton, {
+        size: "sm"
+    })));
+};
+ShimmerPostItem.propTypes = {
+    title: (0, _propTypesDefault.default).bool,
+    text: (0, _propTypesDefault.default).bool,
+    cta: (0, _propTypesDefault.default).bool,
+    imageType: (0, _propTypesDefault.default).oneOf([
+        "circular",
+        "thumbnail"
+    ]),
+    imageHeight: (0, _propTypesDefault.default).number,
+    imageWidth: (0, _propTypesDefault.default).number
+};
+ShimmerPostItem.defaultProps = {
+    title: false,
+    text: false,
+    cta: false,
+    imageType: "thumbnail"
+};
+var ShimmerPostList = function ShimmerPostList(_ref) {
+    var _classNames;
+    var row = _ref.row, col = _ref.col, gap = _ref.gap, className = _ref.className, postStyle = _ref.postStyle;
+    var posts = {
+        STYLE_ONE: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            title: true,
+            text: true,
+            cta: true
+        }),
+        STYLE_TWO: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            title: true,
+            cta: true
+        }),
+        STYLE_THREE: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            title: true
+        }),
+        STYLE_FOUR: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            text: true,
+            cta: true
+        }),
+        STYLE_FIVE: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            text: true
+        }),
+        STYLE_SIX: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            title: true,
+            text: true,
+            cta: true,
+            imageType: "thumbnail",
+            imageWidth: 80,
+            imageHeight: 80,
+            contentCenter: true
+        }),
+        STYLE_SEVEN: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            text: true,
+            cta: true,
+            imageType: "thumbnail",
+            imageWidth: 80,
+            imageHeight: 80,
+            contentCenter: true
+        }),
+        STYLE_EIGHT: (0, _reactDefault.default).createElement(ShimmerPostItem, {
+            title: true,
+            cta: true,
+            imageType: "thumbnail",
+            imageWidth: 80,
+            imageHeight: 80,
+            contentCenter: true
+        })
+    };
+    var renderPosts = function renderPosts() {
+        var list = [];
+        var items = row * col;
+        for(var index = 0; index < items; index++)list.push((0, _reactDefault.default).createElement("div", {
+            key: index
+        }, posts[postStyle]));
+        return list;
+    };
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames((_classNames = {
+            grid: true
+        }, defineProperty(_classNames, "grid-gap-" + gap, true), defineProperty(_classNames, "grid-column-" + col, true), defineProperty(_classNames, className, className), _classNames))
+    }, renderPosts());
+};
+ShimmerPostList.propTypes = {
+    row: (0, _propTypesDefault.default).number,
+    col: (0, _propTypesDefault.default).oneOf([
+        2,
+        3,
+        4
+    ]),
+    gap: (0, _propTypesDefault.default).oneOf([
+        20,
+        30
+    ]),
+    postStyle: (0, _propTypesDefault.default).oneOf([
+        "STYLE_ONE",
+        "STYLE_TWO",
+        "STYLE_THREE",
+        "STYLE_FOUR",
+        "STYLE_FIVE",
+        "STYLE_SIX",
+        "STYLE_SEVEN",
+        "STYLE_EIGHT"
+    ])
+};
+ShimmerPostList.defaultProps = {
+    row: 3,
+    col: 3,
+    gap: 20,
+    postStyle: "STYLE_ONE"
+};
+var ShimmerContentBlock = function ShimmerContentBlock(_ref) {
+    var card = _ref.card, title = _ref.title, text = _ref.text, cta = _ref.cta, thumbnailWidth = _ref.thumbnailWidth, thumbnailHeight = _ref.thumbnailHeight, reverse = _ref.reverse;
+    var renderContent = function renderContent() {
+        return (0, _reactDefault.default).createElement("div", {
+            className: classnames({
+                flex: true,
+                "flex-reverse": reverse
+            })
+        }, (0, _reactDefault.default).createElement("div", {
+            className: classnames({
+                flex: true,
+                "w-50": !thumbnailWidth
+            })
+        }, (0, _reactDefault.default).createElement(ShimmerThumbnail, {
+            width: thumbnailWidth,
+            height: thumbnailHeight,
+            className: "h-100 m-0"
+        })), (0, _reactDefault.default).createElement("div", {
+            className: " flex-1 p-30"
+        }, title && (0, _reactDefault.default).createElement(ShimmerTitle, {
+            className: "w-40",
+            line: 1
+        }), text && (0, _reactDefault.default).createElement(ShimmerText, null), cta && (0, _reactDefault.default).createElement(ShimmerButton, null)));
+    };
+    if (!card) return renderContent();
+    return (0, _reactDefault.default).createElement(ShimmerCard, null, renderContent());
+};
+ShimmerContentBlock.propTypes = {
+    card: (0, _propTypesDefault.default).bool,
+    title: (0, _propTypesDefault.default).bool,
+    text: (0, _propTypesDefault.default).bool,
+    cta: (0, _propTypesDefault.default).bool,
+    thumbnailWidth: (0, _propTypesDefault.default).number,
+    thumbnailHeight: (0, _propTypesDefault.default).number,
+    reverse: (0, _propTypesDefault.default).bool
+};
+ShimmerContentBlock.defaultProps = {
+    card: true,
+    title: false,
+    text: false,
+    cta: false,
+    reverse: false
+};
+var ShimmerSectionHeader = function ShimmerSectionHeader(_ref) {
+    var title = _ref.title, subTitle = _ref.subTitle, center = _ref.center;
+    if (!title && !subTitle) return null;
+    return (0, _reactDefault.default).createElement("div", {
+        className: classnames({
+            "w-60 mb-40": true,
+            "ml-auto mr-auto": center
+        })
+    }, title && (0, _reactDefault.default).createElement(ShimmerTitle, {
+        className: classnames({
+            "w-40": true,
+            "ml-auto mr-auto": center
+        }),
+        line: 1
+    }), subTitle && (0, _reactDefault.default).createElement("div", {
+        className: classnames({
+            "flex-horizontal-center": center
+        })
+    }, (0, _reactDefault.default).createElement(ShimmerText, {
+        line: 1,
+        className: "mb-15 w-80"
+    }), (0, _reactDefault.default).createElement(ShimmerText, {
+        line: 1,
+        className: "mb-15 w-70"
+    }), (0, _reactDefault.default).createElement(ShimmerText, {
+        line: 1,
+        className: "mb-15 w-60"
+    })));
+};
+ShimmerSectionHeader.propTypes = {
+    title: (0, _propTypesDefault.default).bool,
+    subTitle: (0, _propTypesDefault.default).bool,
+    center: (0, _propTypesDefault.default).bool
+};
+ShimmerSectionHeader.defaultProps = {
+    title: true,
+    subTitle: true,
+    center: false
+};
+var css$9 = '.shimmer {\n  background: linear-gradient(to right, #f6f6f6 8%, #f0f0f0 18%, #f6f6f6 33%);\n  background-size: 1000px 100%;\n  animation: shimmer 2.2s linear infinite forwards; }\n\n@-webkit-keyframes shimmer {\n  0% {\n    background-position: -100% 0; }\n  100% {\n    background-position: 100% 0; } }\n\n@keyframes shimmer {\n  0% {\n    background-position: -1000px 0; }\n  100% {\n    background-position: 1000px 0; } }\n\n/*\n=====\nPadding Styles\n=====\n*/\n.p-30 {\n  padding: 30px; }\n\n.p-20 {\n  padding: 20px; }\n\n.p-15 {\n  padding: 15px; }\n\n/*\n=====\nMargin Styles\n=====\n*/\n.m-0 {\n  margin: 0; }\n\n.m-auto {\n  margin: auto; }\n\n.ml-auto {\n  margin-left: auto; }\n\n.mr-auto {\n  margin-right: auto; }\n\n.m-15 {\n  margin: 15px; }\n\n.m-30 {\n  margin: 30px; }\n\n.mb-0 {\n  margin-bottom: 0px; }\n\n.mb-10 {\n  margin-bottom: 10px; }\n\n.mb-15 {\n  margin-bottom: 15px; }\n\n.mb-20 {\n  margin-bottom: 20px; }\n\n.mt-15 {\n  margin-top: 15px; }\n\n.mb-30 {\n  margin-bottom: 30px; }\n\n.mb-40 {\n  margin-bottom: 40px; }\n\n/*\n=======\nContent Size Styles\n=======\n*/\n.w-10 {\n  width: 10%; }\n\n.w-20 {\n  width: 20%; }\n\n.w-30 {\n  width: 30%; }\n\n.w-40 {\n  width: 40%; }\n\n.w-50 {\n  width: 50%; }\n\n.w-60 {\n  width: 60%; }\n\n.w-70 {\n  width: 70%; }\n\n.w-80 {\n  width: 80%; }\n\n/*\n========\nFlex Styles\n========\n*/\n.flex {\n  display: flex; }\n\n.flex-direction-column {\n  flex-direction: column; }\n\n.flex-horizontal-center {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.flex-vertical-center {\n  align-items: center; }\n\n.flex-content-between {\n  justify-content: space-between; }\n\n.flex-reverse {\n  flex-direction: row-reverse; }\n\n.flex-1 {\n  flex-grow: 1; }\n\n/*\n=======\nGrid Styles\n=======\n*/\n.grid {\n  display: grid; }\n\n.grid-gap-10 {\n  gap: 10px; }\n\n.grid-gap-15 {\n  gap: 15px; }\n\n.grid-gap-20 {\n  gap: 20px; }\n\n.grid-gap-30 {\n  gap: 30px; }\n\n.grid-column-2 {\n  grid-template-columns: auto auto; }\n\n.grid-column-3 {\n  grid-template-columns: auto auto auto; }\n\n.grid-column-4 {\n  grid-template-columns: auto auto auto auto; }\n\n.text-center {\n  text-align: center; }\n\n.border-rounded {\n  border-radius: 4px; }\n\n.h-100 {\n  height: 100% !important; }\n\n.shimmer-hr {\n  border-color: #f6f6f6; }\n\n.shimmer-row {\n  display: flex;\n  margin: 0 -15px; }\n  .shimmer-row .shimmer-col,\n  .shimmer-row [class*="shimmer-col-"] {\n    padding-left: 15px;\n    padding-right: 15px;\n    flex-basis: 0;\n    flex-grow: 1;\n    max-width: 100%; }\n';
+styleInject(css$9);
+
+},{"react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7wKI2":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var ReactIs = require("ab34156895c2d0df");
+// By explicitly using `prop-types` you are opting into new development behavior.
+// http://fb.me/prop-types-in-prod
+var throwOnDirectAccess = true;
+module.exports = require("7c0a9ba572937cbf")(ReactIs.isElement, throwOnDirectAccess);
+
+},{"ab34156895c2d0df":"7EuwB","7c0a9ba572937cbf":"bBUgD"}],"7EuwB":[function(require,module,exports) {
+"use strict";
+module.exports = require("c829cf7a87952f45");
+
+},{"c829cf7a87952f45":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var hasSymbol = typeof Symbol === "function" && Symbol.for;
+    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 0xeac7;
+    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 0xeaca;
+    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 0xeacb;
+    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 0xeacc;
+    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 0xead2;
+    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 0xeacd;
+    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+    // (unstable) APIs that have been removed. Can we remove the symbols?
+    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 0xeacf;
+    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 0xeacf;
+    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 0xead0;
+    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 0xead8;
+    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 0xead3;
+    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 0xead4;
+    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 0xead9;
+    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 0xead5;
+    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 0xead6;
+    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 0xead7;
+    function isValidElementType(type) {
+        return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+        type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+    }
+    function typeOf(object) {
+        if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch($$typeof){
+                case REACT_ELEMENT_TYPE:
+                    var type = object.type;
+                    switch(type){
+                        case REACT_ASYNC_MODE_TYPE:
+                        case REACT_CONCURRENT_MODE_TYPE:
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                            return type;
+                        default:
+                            var $$typeofType = type && type.$$typeof;
+                            switch($$typeofType){
+                                case REACT_CONTEXT_TYPE:
+                                case REACT_FORWARD_REF_TYPE:
+                                case REACT_LAZY_TYPE:
+                                case REACT_MEMO_TYPE:
+                                case REACT_PROVIDER_TYPE:
+                                    return $$typeofType;
+                                default:
+                                    return $$typeof;
+                            }
+                    }
+                case REACT_PORTAL_TYPE:
+                    return $$typeof;
+            }
+        }
+        return undefined;
+    } // AsyncMode is deprecated along with isAsyncMode
+    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+    function isAsyncMode(object) {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
+        }
+        return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+    }
+    function isConcurrentMode(object) {
+        return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+    }
+    function isContextConsumer(object) {
+        return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+        return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+        return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+        return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+        return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+        return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+        return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+        return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+        return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+        return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    exports.AsyncMode = AsyncMode;
+    exports.ConcurrentMode = ConcurrentMode;
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+})();
+
+},{}],"bBUgD":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactIs = require("69db3a3a0eafe1db");
+var assign = require("7b3490b744ea758a");
+var ReactPropTypesSecret = require("10f4828a12a7cc1b");
+var has = require("2675bfeb3b5c3913");
+var checkPropTypes = require("c738df0a15978d77");
+var printWarning = function() {};
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+function emptyFunctionThatReturnsNull() {
+    return null;
+}
+module.exports = function(isValidElement, throwOnDirectAccess) {
+    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = "@@iterator"; // Before Symbol spec.
+    /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */ function getIteratorFn(maybeIterable) {
+        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+        if (typeof iteratorFn === "function") return iteratorFn;
+    }
+    /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */ var ANONYMOUS = "<<anonymous>>";
+    // Important!
+    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+    var ReactPropTypes = {
+        array: createPrimitiveTypeChecker("array"),
+        bigint: createPrimitiveTypeChecker("bigint"),
+        bool: createPrimitiveTypeChecker("boolean"),
+        func: createPrimitiveTypeChecker("function"),
+        number: createPrimitiveTypeChecker("number"),
+        object: createPrimitiveTypeChecker("object"),
+        string: createPrimitiveTypeChecker("string"),
+        symbol: createPrimitiveTypeChecker("symbol"),
+        any: createAnyTypeChecker(),
+        arrayOf: createArrayOfTypeChecker,
+        element: createElementTypeChecker(),
+        elementType: createElementTypeTypeChecker(),
+        instanceOf: createInstanceTypeChecker,
+        node: createNodeChecker(),
+        objectOf: createObjectOfTypeChecker,
+        oneOf: createEnumTypeChecker,
+        oneOfType: createUnionTypeChecker,
+        shape: createShapeTypeChecker,
+        exact: createStrictShapeTypeChecker
+    };
+    /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */ /*eslint-disable no-self-compare*/ function is(x, y) {
+        // SameValue algorithm
+        if (x === y) // Steps 1-5, 7-10
+        // Steps 6.b-6.e: +0 != -0
+        return x !== 0 || 1 / x === 1 / y;
+        else // Step 6.a: NaN == NaN
+        return x !== x && y !== y;
+    }
+    /*eslint-enable no-self-compare*/ /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */ function PropTypeError(message, data) {
+        this.message = message;
+        this.data = data && typeof data === "object" ? data : {};
+        this.stack = "";
+    }
+    // Make `instanceof Error` still work for returned errors.
+    PropTypeError.prototype = Error.prototype;
+    function createChainableTypeChecker(validate) {
+        var manualPropTypeCallCache = {};
+        var manualPropTypeWarningCount = 0;
+        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+            componentName = componentName || ANONYMOUS;
+            propFullName = propFullName || propName;
+            if (secret !== ReactPropTypesSecret) {
+                if (throwOnDirectAccess) {
+                    // New behavior only for users of `prop-types` package
+                    var err = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");
+                    err.name = "Invariant Violation";
+                    throw err;
+                } else if (typeof console !== "undefined") {
+                    // Old behavior for people using React.PropTypes
+                    var cacheKey = componentName + ":" + propName;
+                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+                    manualPropTypeWarningCount < 3) {
+                        printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated " + "and will throw in the standalone `prop-types` package. " + "You may be seeing this warning due to a third-party PropTypes " + "library. See https://fb.me/react-warning-dont-call-proptypes " + "for details.");
+                        manualPropTypeCallCache[cacheKey] = true;
+                        manualPropTypeWarningCount++;
+                    }
+                }
+            }
+            if (props[propName] == null) {
+                if (isRequired) {
+                    if (props[propName] === null) return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
+                    return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
+                }
+                return null;
+            } else return validate(props, propName, componentName, location, propFullName);
+        }
+        var chainedCheckType = checkType.bind(null, false);
+        chainedCheckType.isRequired = checkType.bind(null, true);
+        return chainedCheckType;
+    }
+    function createPrimitiveTypeChecker(expectedType) {
+        function validate(props, propName, componentName, location, propFullName, secret) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== expectedType) {
+                // `propValue` being instance of, say, date/regexp, pass the 'object'
+                // check, but we can offer a more precise error message here rather than
+                // 'of type `object`'.
+                var preciseType = getPreciseType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."), {
+                    expectedType: expectedType
+                });
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createAnyTypeChecker() {
+        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+    }
+    function createArrayOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
+            var propValue = props[propName];
+            if (!Array.isArray(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
+            }
+            for(var i = 0; i < propValue.length; i++){
+                var error = typeChecker(propValue, i, componentName, location, propFullName + "[" + i + "]", ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!isValidElement(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!ReactIs.isValidElementType(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createInstanceTypeChecker(expectedClass) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!(props[propName] instanceof expectedClass)) {
+                var expectedClassName = expectedClass.name || ANONYMOUS;
+                var actualClassName = getClassName(props[propName]);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createEnumTypeChecker(expectedValues) {
+        if (!Array.isArray(expectedValues)) {
+            {
+                if (arguments.length > 1) printWarning("Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. " + "A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).");
+                else printWarning("Invalid argument supplied to oneOf, expected an array.");
+            }
+            return emptyFunctionThatReturnsNull;
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            for(var i = 0; i < expectedValues.length; i++){
+                if (is(propValue, expectedValues[i])) return null;
+            }
+            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+                var type = getPreciseType(value);
+                if (type === "symbol") return String(value);
+                return value;
+            });
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createObjectOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
+            for(var key in propValue)if (has(propValue, key)) {
+                var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createUnionTypeChecker(arrayOfTypeCheckers) {
+        if (!Array.isArray(arrayOfTypeCheckers)) {
+            printWarning("Invalid argument supplied to oneOfType, expected an instance of array.");
+            return emptyFunctionThatReturnsNull;
+        }
+        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+            var checker = arrayOfTypeCheckers[i];
+            if (typeof checker !== "function") {
+                printWarning("Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i + ".");
+                return emptyFunctionThatReturnsNull;
+            }
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var expectedTypes = [];
+            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+                var checker = arrayOfTypeCheckers[i];
+                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+                if (checkerResult == null) return null;
+                if (checkerResult.data && has(checkerResult.data, "expectedType")) expectedTypes.push(checkerResult.data.expectedType);
+            }
+            var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createNodeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!isNode(props[propName])) return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function invalidValidatorError(componentName, location, propFullName, key, type) {
+        return new PropTypeError((componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + type + "`.");
+    }
+    function createShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            for(var key in shapeTypes){
+                var checker = shapeTypes[key];
+                if (typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createStrictShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            // We need to check all keys in case some are required but missing from props.
+            var allKeys = assign({}, props[propName], shapeTypes);
+            for(var key in allKeys){
+                var checker = shapeTypes[key];
+                if (has(shapeTypes, key) && typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                if (!checker) return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`." + "\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function isNode(propValue) {
+        switch(typeof propValue){
+            case "number":
+            case "string":
+            case "undefined":
+                return true;
+            case "boolean":
+                return !propValue;
+            case "object":
+                if (Array.isArray(propValue)) return propValue.every(isNode);
+                if (propValue === null || isValidElement(propValue)) return true;
+                var iteratorFn = getIteratorFn(propValue);
+                if (iteratorFn) {
+                    var iterator = iteratorFn.call(propValue);
+                    var step;
+                    if (iteratorFn !== propValue.entries) while(!(step = iterator.next()).done){
+                        if (!isNode(step.value)) return false;
+                    }
+                    else // Iterator will provide entry [k,v] tuples rather than values.
+                    while(!(step = iterator.next()).done){
+                        var entry = step.value;
+                        if (entry) {
+                            if (!isNode(entry[1])) return false;
+                        }
+                    }
+                } else return false;
+                return true;
+            default:
+                return false;
+        }
+    }
+    function isSymbol(propType, propValue) {
+        // Native Symbol.
+        if (propType === "symbol") return true;
+        // falsy value can't be a Symbol
+        if (!propValue) return false;
+        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+        if (propValue["@@toStringTag"] === "Symbol") return true;
+        // Fallback for non-spec compliant Symbols which are polyfilled.
+        if (typeof Symbol === "function" && propValue instanceof Symbol) return true;
+        return false;
+    }
+    // Equivalent of `typeof` but with special handling for array and regexp.
+    function getPropType(propValue) {
+        var propType = typeof propValue;
+        if (Array.isArray(propValue)) return "array";
+        if (propValue instanceof RegExp) // Old webkits (at least until Android 4.0) return 'function' rather than
+        // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+        // passes PropTypes.object.
+        return "object";
+        if (isSymbol(propType, propValue)) return "symbol";
+        return propType;
+    }
+    // This handles more types than `getPropType`. Only used for error messages.
+    // See `createPrimitiveTypeChecker`.
+    function getPreciseType(propValue) {
+        if (typeof propValue === "undefined" || propValue === null) return "" + propValue;
+        var propType = getPropType(propValue);
+        if (propType === "object") {
+            if (propValue instanceof Date) return "date";
+            else if (propValue instanceof RegExp) return "regexp";
+        }
+        return propType;
+    }
+    // Returns a string that is postfixed to a warning about an invalid type.
+    // For example, "undefined" or "of type array"
+    function getPostfixForTypeWarning(value) {
+        var type = getPreciseType(value);
+        switch(type){
+            case "array":
+            case "object":
+                return "an " + type;
+            case "boolean":
+            case "date":
+            case "regexp":
+                return "a " + type;
+            default:
+                return type;
+        }
+    }
+    // Returns class name of the object, if any.
+    function getClassName(propValue) {
+        if (!propValue.constructor || !propValue.constructor.name) return ANONYMOUS;
+        return propValue.constructor.name;
+    }
+    ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+    ReactPropTypes.PropTypes = ReactPropTypes;
+    return ReactPropTypes;
+};
+
+},{"69db3a3a0eafe1db":"7EuwB","7b3490b744ea758a":"7OXxh","10f4828a12a7cc1b":"jZTZJ","2675bfeb3b5c3913":"fqKuf","c738df0a15978d77":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/ "use strict";
+/* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+    if (val === null || val === undefined) throw new TypeError("Object.assign cannot be called with null or undefined");
+    return Object(val);
+}
+function shouldUseNative() {
+    try {
+        if (!Object.assign) return false;
+        // Detect buggy property enumeration order in older V8 versions.
+        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
+        var test1 = new String("abc"); // eslint-disable-line no-new-wrappers
+        test1[5] = "de";
+        if (Object.getOwnPropertyNames(test1)[0] === "5") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test2 = {};
+        for(var i = 0; i < 10; i++)test2["_" + String.fromCharCode(i)] = i;
+        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+            return test2[n];
+        });
+        if (order2.join("") !== "0123456789") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test3 = {};
+        "abcdefghijklmnopqrst".split("").forEach(function(letter) {
+            test3[letter] = letter;
+        });
+        if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") return false;
+        return true;
+    } catch (err) {
+        // We don't expect any of the above to throw, but better to be safe.
+        return false;
+    }
+}
+module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for(var s = 1; s < arguments.length; s++){
+        from = Object(arguments[s]);
+        for(var key in from)if (hasOwnProperty.call(from, key)) to[key] = from[key];
+        if (getOwnPropertySymbols) {
+            symbols = getOwnPropertySymbols(from);
+            for(var i = 0; i < symbols.length; i++)if (propIsEnumerable.call(from, symbols[i])) to[symbols[i]] = from[symbols[i]];
+        }
+    }
+    return to;
+};
+
+},{}],"jZTZJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+module.exports = ReactPropTypesSecret;
+
+},{}],"fqKuf":[function(require,module,exports) {
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+},{}],"5VwyJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var printWarning = function() {};
+var ReactPropTypesSecret = require("8884fe62d4848dc3");
+var loggedTypeFailures = {};
+var has = require("68ca7870ca68acb0");
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+    for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+            // This is intentionally an invariant that gets caught. It's the same
+            // behavior as without this statement except with a better message.
+            if (typeof typeSpecs[typeSpecName] !== "function") {
+                var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                err.name = "Invariant Violation";
+                throw err;
+            }
+            error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+            error = ex;
+        }
+        if (error && !(error instanceof Error)) printWarning((componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker " + "function must return `null` or an `Error` but returned a " + typeof error + ". " + "You may have forgotten to pass an argument to the type checker " + "creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and " + "shape all require an argument).");
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+            // Only monitor this failure once because there tends to be a lot of the
+            // same error.
+            loggedTypeFailures[error.message] = true;
+            var stack = getStack ? getStack() : "";
+            printWarning("Failed " + location + " type: " + error.message + (stack != null ? stack : ""));
+        }
+    }
+}
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */ checkPropTypes.resetWarningCache = function() {
+    loggedTypeFailures = {};
+};
+module.exports = checkPropTypes;
+
+},{"8884fe62d4848dc3":"jZTZJ","68ca7870ca68acb0":"fqKuf"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
