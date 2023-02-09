@@ -1,36 +1,17 @@
 import React from "react";
-import { ShimmerPostList } from "react-shimmer-effects";
 
 const Shimmer = () =>  {
-    return <ShimmerPostList postStyle="STYLE_FIVE" col={4} row={2} gap={30} className="shimmer-style"/>;
-    // return(
-    //     <div className="shimmer-body" >
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-    //         <div className="shimmer-card" >
-    //             {" "}
-    //         </div>
-
-    //     </div>
-    // )
+    return(
+        <div>
+            {Array(10).fill("").map((e,index) => (
+                <div className="shimmer-card" key={index}>
+                    <div className="img-shimmer"></div>
+                    <div className="name-shimmer"></div>
+                    <div className="cuisines-shimmer"></div>
+                    <div className="cuisines-shimmer"></div>
+                </div>
+            ))}
+        </div>
+    )
 }
 export default Shimmer

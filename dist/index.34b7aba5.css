@@ -93,4 +93,34 @@ body {
   margin-top: 70px;
 }
 
+.shimmer-card {
+  width: 20%;
+  height: 340px;
+  border-radius: 10px;
+  margin: 5em 1.7% 1.7%;
+  padding: 10px;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 0 3px 10px #0000004d;
+}
+
+.img-shimmer, .name-shimmer, .cuisines-shimmer {
+  width: 100%;
+  height: 200px;
+  background-color: #f1f0f0;
+  border-radius: 10px;
+}
+
+.name-shimmer {
+  width: 60%;
+  height: 30px;
+  margin: 20px 5px;
+}
+
+.cuisines-shimmer {
+  width: 90%;
+  height: 20px;
+  margin: 20px 5px;
+}
+
 /*# sourceMappingURL=index.34b7aba5.css.map */
