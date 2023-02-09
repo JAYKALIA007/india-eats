@@ -1,5 +1,5 @@
 import { FaShoppingCart } from "react-icons/fa";
-import logo from '../site_logo_1.jpg'
+import logo from '../assets/site_logo_1.jpg'
 import { useState } from "react";
 
 const Title = () =>(
