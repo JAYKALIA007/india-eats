@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import {  IMG_CDN_URL } from '../config'
-
+import { Link } from "react-router-dom";
 const RestaurantCard=({cloudinaryImageId , name , cuisines , avgRating , slaString , costForTwoString, id})=>(
     <div className="card-container">
         <img className="card-image" alt={name} src={`${IMG_CDN_URL}/${cloudinaryImageId}`} />

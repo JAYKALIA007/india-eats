@@ -37,14 +37,21 @@ body {
   display: flex;
 }
 
-.nav-items > ul > li {
+.nav-items > ul > * {
+  color: #000;
   margin-top: 15px;
   margin-right: 20px;
+  text-decoration: none;
   list-style: none;
+}
+
+.nav-items > ul > :hover {
+  text-decoration: underline;
 }
 
 .card-container {
   width: 20%;
+  color: #403f3f;
   border-radius: 10px;
   margin: 1.7%;
   padding: 10px;
@@ -121,6 +128,11 @@ body {
   width: 90%;
   height: 20px;
   margin: 20px 5px;
+}
+
+.restaurant-menu {
+  margin: 20px;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.34b7aba5.css.map */

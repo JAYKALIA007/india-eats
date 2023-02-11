@@ -1,13 +1,13 @@
 import { FaShoppingCart } from "react-icons/fa";
 import logo from '../assets/site_logo_1.jpg'
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Title = () =>(
     <div className="title">
-        <a style={{'color' : 'black'}} href="/">
+        <Link style={{'color' : 'black'}} to="/">
             <img className="site-logo" src={logo} alt='site-logo' />
             <h1 className="site-header">India eats </h1>
-        </a>
+        </Link>
         <p className="site-tagline">  Giving your Hunger a new Option</p>
     </div>
 )
@@ -19,10 +19,10 @@ const Header = () =>{
         <Title/>
         <div className="nav-items" >
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li><FaShoppingCart/></li>
+                <Link to="/"><li>Home</li></Link>
+                <Link to="/about"><li>About</li></Link>
+                <Link to="/contact"><li>Contact</li></Link>
+                <Link><FaShoppingCart /></Link>
                 <li>{(loggedIn) ? <button onClick={()=>setLoggedIn(false)} >  LogOut</button> : <button onClick={()=>setLoggedIn(true)} > Login</button>}</li>
             </ul>
         </div>

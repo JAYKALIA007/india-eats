@@ -4,6 +4,7 @@ import RestaurantCard from "./RestaurantCard";
 import { FaSearch } from "react-icons/fa";
 import { useState , useEffect } from 'react'
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const filterData = (searchText , allRestaurants) =>{
     // console.log(searchText)
@@ -50,7 +51,9 @@ const Body = () =>{
         <div className="body-container" >
             {filteredRestaurants.map(restaurant =>(
                 // console.log(restaurant.data)
-                <RestaurantCard {...restaurant.data} key={restaurant.data.id}/>
+                <Link to= {`restaurant/${restaurant.data.id}`}>
+                    <RestaurantCard {...restaurant.data} key={restaurant.data.id}/>
+                </Link>
                 ))}
         </div>
     </>

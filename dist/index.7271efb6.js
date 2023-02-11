@@ -2940,6 +2940,10 @@ var _about = require("./components/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
 var _error = require("./components/Error");
 var _errorDefault = parcelHelpers.interopDefault(_error);
+var _contact = require("./components/Contact");
+var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _restaurantMenu = require("./components/RestaurantMenu");
+var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
 /**
  * App Layout
  * 
@@ -2963,17 +2967,17 @@ var _errorDefault = parcelHelpers.interopDefault(_error);
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 32,
+                lineNumber: 34,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 33,
+                lineNumber: 35,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 34,
+                lineNumber: 36,
                 columnNumber: 9
             }, undefined)
         ]
@@ -2984,37 +2988,56 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 41,
+            lineNumber: 43,
             columnNumber: 19
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 42,
+            lineNumber: 44,
             columnNumber: 24
-        }, undefined)
-    },
-    {
-        path: "/about",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 46,
-            columnNumber: 19
-        }, undefined)
+        }, undefined),
+        children: [
+            {
+                path: "/",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 48,
+                    columnNumber: 27
+                }, undefined)
+            },
+            {
+                path: "/about",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 52,
+                    columnNumber: 27
+                }, undefined)
+            },
+            {
+                path: "/contact",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 56,
+                    columnNumber: 27
+                }, undefined)
+            },
+            {
+                path: "/restaurant/:id",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 60,
+                    columnNumber: 27
+                }, undefined)
+            }
+        ]
     }
 ]);
-const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    children: "Hello World!"
-}, void 0, false, {
-    fileName: "src/App.js",
-    lineNumber: 50,
-    columnNumber: 17
-}, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 52,
+    lineNumber: 67,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3025,7 +3048,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./App.css":"6n0o6","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Error":"kvula"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./App.css":"6n0o6","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Error":"kvula","./components/Contact":"cgAOG","./components/RestaurantMenu":"8PuJ6"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("919fca915035973f");
 
@@ -27224,15 +27247,16 @@ var _fa = require("react-icons/fa");
 var _siteLogo1Jpg = require("../assets/site_logo_1.jpg");
 var _siteLogo1JpgDefault = parcelHelpers.interopDefault(_siteLogo1Jpg);
 var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "title",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                 style: {
                     "color": "black"
                 },
-                href: "/",
+                to: "/",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "site-logo",
@@ -27287,32 +27311,53 @@ const Header = ()=>{
                 className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 22,
+                                columnNumber: 30
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 22,
                             columnNumber: 17
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About"
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/about",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 23,
+                                columnNumber: 35
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 23,
                             columnNumber: 17
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact"
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/contact",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 24,
+                                columnNumber: 37
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 24,
                             columnNumber: 17
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaShoppingCart), {}, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 25,
-                                columnNumber: 21
+                                columnNumber: 23
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
@@ -27370,7 +27415,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/site_logo_1.jpg":"hZDiC"}],"jZjPM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/site_logo_1.jpg":"hZDiC","react-router-dom":"9xmpe"}],"jZjPM":[function(require,module,exports) {
 // THIS FILE IS AUTO GENERATED
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -55257,879 +55302,7 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"8yaV8":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0606.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _restaurantCard = require("./RestaurantCard");
-var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-// import SearchBar from './SearchBar'
-// import { restaurantInfo } from '../config'
-var _fa = require("react-icons/fa");
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _s = $RefreshSig$();
-const filterData = (searchText, allRestaurants)=>{
-    // console.log(searchText)
-    // console.log(restaurants)
-    if (searchText === "") return allRestaurants;
-    const filteredData = allRestaurants.filter((restaurant)=>restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase()));
-    return filteredData;
-};
-const Body = ()=>{
-    _s();
-    const [searchText, setSearchText] = (0, _react.useState)("");
-    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
-    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        fetchRestaurantData();
-    }, []);
-    async function fetchRestaurantData() {
-        const res = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING");
-        const json = await res.json();
-        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-        setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    }
-    //early return
-    if (!allRestaurants) return null;
-    return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 35,
-        columnNumber: 44
-    }, undefined) : filteredRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "No Restaurant Found"
-    }, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 35,
-        columnNumber: 95
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-bar",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        placeholder: "Search",
-                        style: {
-                            "padding": "5px",
-                            "width": "20%",
-                            "borderRadius": "5px",
-                            "border": "1px solid grey"
-                        },
-                        value: searchText,
-                        onChange: (e)=>{
-                            setSearchText(e.target.value);
-                        }
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 38,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaSearch), {
-                        className: "search-icon",
-                        onClick: ()=>{
-                            setFilteredRestaurants(filterData(searchText, allRestaurants));
-                        }
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 45,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Body.js",
-                lineNumber: 37,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "body-container",
-                children: filteredRestaurants.map((restaurant)=>// console.log(restaurant.data)
-                    /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
-                        ...restaurant.data,
-                        key: restaurant.data.id,
-                        __source: {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 53,
-                            columnNumber: 17
-                        },
-                        __self: undefined
-                    }))
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 50,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_s(Body, "mfFD1GYTxUKS8gwZ1KRBG0D6XF0=");
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$0606.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"bMboU":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ffb1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _fa = require("react-icons/fa");
-var _config = require("../config");
-const RestaurantCard = ({ cloudinaryImageId , name , cuisines , avgRating , slaString , costForTwoString , id  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card-container",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "card-image",
-                alt: name,
-                src: `${(0, _config.IMG_CDN_URL)}/${cloudinaryImageId}`
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 6,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 7,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: cuisines.slice(0, 3).join(", ")
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "rating",
-                        children: [
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaStar), {
-                                size: "0.8em"
-                            }, void 0, false, {
-                                fileName: "src/components/RestaurantCard.js",
-                                lineNumber: 10,
-                                columnNumber: 36
-                            }, undefined),
-                            " ",
-                            avgRating,
-                            " "
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 10,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: slaString
-                    }, void 0, false, {
-                        fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 11,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: costForTwoString
-                    }, void 0, false, {
-                        fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 12,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 9,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/RestaurantCard.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-_c = RestaurantCard;
-exports.default = RestaurantCard;
-var _c;
-$RefreshReg$(_c, "RestaurantCard");
-
-  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN"}],"jtCLN":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
-const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill" // export const restaurantInfo = [
- //         {
- //           "type": "restaurant",
- //           "data": {
- //             "type": "F",
- //             "id": "279735",
- //             "name": "Easy Bites by Hotel Empire",
- //             "uuid": "b5eda477-5ddc-4826-a9d3-7a3b37c84b51",
- //             "city": "1",
- //             "area": "Ashok Nagar",
- //             "totalRatingsString": "100+ ratings",
- //             "cloudinaryImageId": "d06b7fa84cb8f8193f60d4c2de172347",
- //             "cuisines": [
- //               "Snacks",
- //               "Fast Food",
- //               "Beverages"
- //             ],
- //             "tags": [
- //             ],
- //             "costForTwo": 15000,
- //             "costForTwoString": "₹150 FOR TWO",
- //             "deliveryTime": 38,
- //             "minDeliveryTime": 35,
- //             "maxDeliveryTime": 45,
- //             "slaString": "35-45 MINS",
- //             "lastMileTravel": 2.0999999046325684,
- //             "slugs": {
- //               "restaurant": "easy-bites-central-bangalore-central-bangalore",
- //               "city": "bangalore"
- //             },
- //             "cityState": "1",
- //             "address": "No.35,Castel Street,Bangalore-560025,District-B.B.M.P East,STATE-Karnataka",
- //             "locality": "Castel Street",
- //             "parentId": 8503,
- //             "unserviceable": false,
- //             "veg": false,
- //             "select": false,
- //             "favorite": false,
- //             "tradeCampaignHeaders": [
- //             ],
- //             "aggregatedDiscountInfo": {
- //               "header": "50% off",
- //               "shortDescriptionList": [
- //                 {
- //                   "meta": "50% off | Use WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "descriptionList": [
- //                 {
- //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "subHeader": "",
- //               "headerType": 0,
- //               "superFreedel": ""
- //             },
- //             "aggregatedDiscountInfoV2": {
- //               "header": "50% OFF",
- //               "shortDescriptionList": [
- //                 {
- //                   "meta": "Use WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "descriptionList": [
- //                 {
- //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "subHeader": "",
- //               "headerType": 0,
- //               "superFreedel": ""
- //             },
- //             "ribbon": [
- //               {
- //                 "type": "PROMOTED"
- //               }
- //             ],
- //             "chain": [
- //             ],
- //             "feeDetails": {
- //               "fees": [
- //               ],
- //               "totalFees": 0,
- //               "message": "",
- //               "title": "",
- //               "amount": "",
- //               "icon": ""
- //             },
- //             "availability": {
- //               "opened": true,
- //               "nextOpenMessage": "",
- //               "nextCloseMessage": ""
- //             },
- //             "longDistanceEnabled": 0,
- //             "rainMode": "NONE",
- //             "thirdPartyAddress": false,
- //             "thirdPartyVendor": "",
- //             "adTrackingID": "cid=5855585~p=1~eid=00000186-25b9-ae7f-1287-ca33004e0164",
- //             "badges": {
- //               "imageBased": [
- //               ],
- //               "textBased": [
- //               ],
- //               "textExtendedBadges": [
- //               ]
- //             },
- //             "lastMileTravelString": "2 kms",
- //             "hasSurge": false,
- //             "sla": {
- //               "restaurantId": "279735",
- //               "deliveryTime": 38,
- //               "minDeliveryTime": 35,
- //               "maxDeliveryTime": 45,
- //               "lastMileTravel": 2.0999999046325684,
- //               "lastMileDistance": 0,
- //               "serviceability": "SERVICEABLE",
- //               "rainMode": "NONE",
- //               "longDistance": "NOT_LONG_DISTANCE",
- //               "preferentialService": false,
- //               "iconType": "EMPTY"
- //             },
- //             "promoted": true,
- //             "avgRating": "4.1",
- //             "totalRatings": 100,
- //             "new": false
- //           },
- //           "subtype": "basic"
- //         },
- //         {
- //           "type": "restaurant",
- //           "data": {
- //             "type": "F",
- //             "id": "3241",
- //             "name": "Meghana Foods",
- //             "uuid": "93695df0-56e1-417e-b9a8-32084ebaadaf",
- //             "city": "1",
- //             "area": "Ashok Nagar",
- //             "totalRatingsString": "1000+ ratings",
- //             "cloudinaryImageId": "e0vvulfbahjxjz6k4uwi",
- //             "cuisines": [
- //               "Biryani",
- //               "Andhra",
- //               "South Indian",
- //               "North Indian",
- //               "Chinese",
- //               "Seafood"
- //             ],
- //             "tags": [
- //             ],
- //             "costForTwo": 50000,
- //             "costForTwoString": "₹500 FOR TWO",
- //             "deliveryTime": 37,
- //             "minDeliveryTime": 35,
- //             "maxDeliveryTime": 45,
- //             "slaString": "35-45 MINS",
- //             "lastMileTravel": 2.4000000953674316,
- //             "slugs": {
- //               "restaurant": "meghana-foods-central-bangalore",
- //               "city": "bangalore"
- //             },
- //             "cityState": "1",
- //             "address": "57/1, 1st Floor, Jayalaxmi Chambers, Next to Old Galaxy Theatre,Residency Road, Bangalore",
- //             "locality": "Residency Road",
- //             "parentId": 635,
- //             "unserviceable": false,
- //             "veg": false,
- //             "select": false,
- //             "favorite": false,
- //             "tradeCampaignHeaders": [
- //             ],
- //             "aggregatedDiscountInfo": {
- //               "header": "50% off",
- //               "shortDescriptionList": [
- //                 {
- //                   "meta": "50% off | Use WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "descriptionList": [
- //                 {
- //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "subHeader": "",
- //               "headerType": 0,
- //               "superFreedel": ""
- //             },
- //             "aggregatedDiscountInfoV2": {
- //               "header": "50% OFF",
- //               "shortDescriptionList": [
- //                 {
- //                   "meta": "Use WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "descriptionList": [
- //                 {
- //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
- //                   "discountType": "Percentage",
- //                   "operationType": "RESTAURANT"
- //                 }
- //               ],
- //               "subHeader": "",
- //               "headerType": 0,
- //               "superFreedel": ""
- //             },
- //             "chain": [
- //             ],
- //             "feeDetails": {
- //               "fees": [
- //               ],
- //               "totalFees": 0,
- //               "message": "",
- //               "title": "",
- //               "amount": "",
- //               "icon": ""
- //             },
- //             "availability": {
- //               "opened": true,
- //               "nextOpenMessage": "",
- //               "nextCloseMessage": ""
- //             },
- //             "longDistanceEnabled": 0,
- //             "rainMode": "NONE",
- //             "thirdPartyAddress": false,
- //             "thirdPartyVendor": "",
- //             "adTrackingID": "",
- //             "badges": {
- //               "imageBased": [
- //               ],
- //               "textBased": [
- //               ],
- //               "textExtendedBadges": [
- //               ]
- //             },
- //             "lastMileTravelString": "2.4 kms",
- //             "hasSurge": false,
- //             "sla": {
- //               "restaurantId": "3241",
- //               "deliveryTime": 37,
- //               "minDeliveryTime": 35,
- //               "maxDeliveryTime": 45,
- //               "lastMileTravel": 2.4000000953674316,
- //               "lastMileDistance": 0,
- //               "serviceability": "SERVICEABLE",
- //               "rainMode": "NONE",
- //               "longDistance": "NOT_LONG_DISTANCE",
- //               "preferentialService": false,
- //               "iconType": "EMPTY"
- //             },
- //             "promoted": false,
- //             "avgRating": "4.5",
- //             "totalRatings": 1000,
- //             "new": false
- //           },
- //           "subtype": "basic"
- //         },
- //         {
- //         "type": "restaurant",
- //         "data": {
- //           "type": "F",
- //           "id": "47493",
- //           "name": "Hari Super Sandwich (3rd Block)",
- //           "uuid": "97798836-f15a-4566-bdeb-7e4d1b0eac20",
- //           "city": "1",
- //           "area": "Jayanagar",
- //           "totalRatingsString": "1000+ ratings",
- //           "cloudinaryImageId": "ml1ituszk5qurjia3r9h",
- //           "cuisines": [
- //             "Chaat",
- //             "Snacks",
- //             "Pizzas",
- //             "North Indian",
- //             "Indian"
- //           ],
- //           "tags": [
- //           ],
- //           "costForTwo": 10000,
- //           "costForTwoString": "₹100 FOR TWO",
- //           "deliveryTime": 48,
- //           "minDeliveryTime": 45,
- //           "maxDeliveryTime": 55,
- //           "slaString": "45-55 MINS",
- //           "lastMileTravel": 5,
- //           "slugs": {
- //             "restaurant": "hari-super-sandwich-jayanagar-jayanagar",
- //             "city": "bangalore"
- //           },
- //           "cityState": "1",
- //           "address": "No 177/A 22nd cross 3rd block Jayanagar Bangalore 560011",
- //           "locality": "3rd Block",
- //           "parentId": 352495,
- //           "unserviceable": false,
- //           "veg": true,
- //           "select": false,
- //           "favorite": false,
- //           "tradeCampaignHeaders": [
- //           ],
- //           "aggregatedDiscountInfo": {
- //             "header": "50% off",
- //             "shortDescriptionList": [
- //               {
- //                 "meta": "50% off | Use WELCOME50",
- //                 "discountType": "Percentage",
- //                 "operationType": "RESTAURANT"
- //               }
- //             ],
- //             "descriptionList": [
- //               {
- //                 "meta": "50% off up to ₹100 | Use code WELCOME50",
- //                 "discountType": "Percentage",
- //                 "operationType": "RESTAURANT"
- //               }
- //             ],
- //             "subHeader": "",
- //             "headerType": 0,
- //             "superFreedel": ""
- //           },
- //           "aggregatedDiscountInfoV2": {
- //             "header": "50% OFF",
- //             "shortDescriptionList": [
- //               {
- //                 "meta": "Use WELCOME50",
- //                 "discountType": "Percentage",
- //                 "operationType": "RESTAURANT"
- //               }
- //             ],
- //             "descriptionList": [
- //               {
- //                 "meta": "50% off up to ₹100 | Use code WELCOME50",
- //                 "discountType": "Percentage",
- //                 "operationType": "RESTAURANT"
- //               }
- //             ],
- //             "subHeader": "",
- //             "headerType": 0,
- //             "superFreedel": ""
- //           },
- //           "chain": [
- //           ],
- //           "feeDetails": {
- //             "fees": [
- //             ],
- //             "totalFees": 0,
- //             "message": "",
- //             "title": "",
- //             "amount": "",
- //             "icon": ""
- //           },
- //           "availability": {
- //             "opened": true,
- //             "nextOpenMessage": "",
- //             "nextCloseMessage": ""
- //           },
- //           "longDistanceEnabled": 0,
- //           "rainMode": "NONE",
- //           "thirdPartyAddress": false,
- //           "thirdPartyVendor": "",
- //           "adTrackingID": "",
- //           "badges": {
- //             "imageBased": [
- //             ],
- //             "textBased": [
- //             ],
- //             "textExtendedBadges": [
- //             ]
- //           },
- //           "lastMileTravelString": "5 kms",
- //           "hasSurge": false,
- //           "sla": {
- //             "restaurantId": "47493",
- //             "deliveryTime": 48,
- //             "minDeliveryTime": 45,
- //             "maxDeliveryTime": 55,
- //             "lastMileTravel": 5,
- //             "lastMileDistance": 0,
- //             "serviceability": "SERVICEABLE",
- //             "rainMode": "NONE",
- //             "longDistance": "NOT_LONG_DISTANCE",
- //             "preferentialService": false,
- //             "iconType": "EMPTY"
- //           },
- //           "promoted": false,
- //           "avgRating": "4.0",
- //           "totalRatings": 1000,
- //           "new": false
- //         },
- //         "subtype": "basic"
- //         },
- //         {
- //             "type": "restaurant",
- //             "data": {
- //             "type": "F",
- //             "id": "210945",
- //             "name": "Royal Restaurant",
- //             "uuid": "9b33bca4-65e6-4a26-af3e-f47c4476ed4d",
- //             "city": "1",
- //             "area": "Shivajinagar",
- //             "totalRatingsString": "500+ ratings",
- //             "cloudinaryImageId": "yicweopn4lzcjlqy4jvq",
- //             "cuisines": [
- //                 "Chinese",
- //                 "North Indian",
- //                 "Tandoor"
- //             ],
- //             "tags": [
- //             ],
- //             "costForTwo": 30000,
- //             "costForTwoString": "₹300 FOR TWO",
- //             "deliveryTime": 38,
- //             "minDeliveryTime": 35,
- //             "maxDeliveryTime": 45,
- //             "slaString": "35-45 MINS",
- //             "lastMileTravel": 2.5999999046325684,
- //             "slugs": {
- //                 "restaurant": "royal-restaurant-central-bangalore-central-bangalore",
- //                 "city": "bangalore"
- //             },
- //             "cityState": "1",
- //             "address": "Broadway Road Police Station, HKP Road, Sulthangunta, Shivajinagar, Bengaluru, Bangalore Urban, Karnataka, India",
- //             "locality": "Sulthangunta",
- //             "parentId": 2896,
- //             "unserviceable": false,
- //             "veg": false,
- //             "select": false,
- //             "favorite": false,
- //             "tradeCampaignHeaders": [
- //             ],
- //             "aggregatedDiscountInfo": {
- //                 "header": "35% off",
- //                 "shortDescriptionList": [
- //                 {
- //                     "meta": "35% off on all orders",
- //                     "discountType": "Percentage",
- //                     "operationType": "RESTAURANT"
- //                 },
- //                 {
- //                     "meta": "FREE DELIVERY",
- //                     "discountType": "FREE_DELIVERY",
- //                     "operationType": "RESTAURANT"
- //                 }
- //                 ],
- //                 "descriptionList": [
- //                 {
- //                     "meta": "35% off on all orders",
- //                     "discountType": "Percentage",
- //                     "operationType": "RESTAURANT"
- //                 },
- //                 {
- //                     "meta": "FREE DELIVERY",
- //                     "discountType": "FREE_DELIVERY",
- //                     "operationType": "RESTAURANT"
- //                 }
- //                 ],
- //                 "subHeader": "",
- //                 "headerType": 0,
- //                 "superFreedel": ""
- //             },
- //             "aggregatedDiscountInfoV2": {
- //                 "header": "35% OFF",
- //                 "shortDescriptionList": [
- //                 {
- //                     "meta": "Free Delivery",
- //                     "discountType": "Percentage",
- //                     "operationType": "RESTAURANT"
- //                 }
- //                 ],
- //                 "descriptionList": [
- //                 {
- //                     "meta": "35% off on all orders",
- //                     "discountType": "Percentage",
- //                     "operationType": "RESTAURANT"
- //                 },
- //                 {
- //                     "meta": "FREE DELIVERY",
- //                     "discountType": "FREE_DELIVERY",
- //                     "operationType": "RESTAURANT"
- //                 }
- //                 ],
- //                 "subHeader": "",
- //                 "headerType": 0,
- //                 "superFreedel": ""
- //             },
- //             "chain": [
- //             ],
- //             "feeDetails": {
- //                 "fees": [
- //                 ],
- //                 "totalFees": 0,
- //                 "message": "",
- //                 "title": "",
- //                 "amount": "",
- //                 "icon": ""
- //             },
- //             "availability": {
- //                 "opened": true,
- //                 "nextOpenMessage": "",
- //                 "nextCloseMessage": ""
- //             },
- //             "longDistanceEnabled": 0,
- //             "rainMode": "NONE",
- //             "thirdPartyAddress": false,
- //             "thirdPartyVendor": "",
- //             "adTrackingID": "",
- //             "badges": {
- //                 "imageBased": [
- //                 ],
- //                 "textBased": [
- //                 ],
- //                 "textExtendedBadges": [
- //                 ]
- //             },
- //             "lastMileTravelString": "2.5 kms",
- //             "hasSurge": false,
- //             "sla": {
- //                 "restaurantId": "210945",
- //                 "deliveryTime": 38,
- //                 "minDeliveryTime": 35,
- //                 "maxDeliveryTime": 45,
- //                 "lastMileTravel": 2.5999999046325684,
- //                 "lastMileDistance": 0,
- //                 "serviceability": "SERVICEABLE",
- //                 "rainMode": "NONE",
- //                 "longDistance": "NOT_LONG_DISTANCE",
- //                 "preferentialService": false,
- //                 "iconType": "EMPTY"
- //             },
- //             "promoted": false,
- //             "avgRating": "4.0",
- //             "totalRatings": 500,
- //             "new": false
- //             },
- //             "subtype": "basic"
- //         }
- // ]
-;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0b04.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: Array(10).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "img-shimmer"
-                    }, void 0, false, {
-                        fileName: "src/components/Shimmer.js",
-                        lineNumber: 8,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "name-shimmer"
-                    }, void 0, false, {
-                        fileName: "src/components/Shimmer.js",
-                        lineNumber: 9,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "cuisines-shimmer"
-                    }, void 0, false, {
-                        fileName: "src/components/Shimmer.js",
-                        lineNumber: 10,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "cuisines-shimmer"
-                    }, void 0, false, {
-                        fileName: "src/components/Shimmer.js",
-                        lineNumber: 11,
-                        columnNumber: 21
-                    }, undefined)
-                ]
-            }, index, true, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 7,
-                columnNumber: 17
-            }, undefined))
-    }, void 0, false, {
-        fileName: "src/components/Shimmer.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Shimmer;
-exports.default = Shimmer;
-var _c;
-$RefreshReg$(_c, "Shimmer");
-
-  $parcel$ReactRefreshHelpers$0b04.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bc7c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Footer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Footer"
-        }, void 0, false, {
-            fileName: "src/components/Footer.js",
-            lineNumber: 3,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Footer.js",
-        lineNumber: 2,
-        columnNumber: 5
-    }, undefined);
-_c = Footer;
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$bc7c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.8.1
  *
@@ -61117,34 +60290,921 @@ function getTargetMatch(matches, location) {
     return pathMatches[pathMatches.length - 1];
 } //#endregion
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9R1Eu":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yaV8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+// import SearchBar from './SearchBar'
+// import { restaurantInfo } from '../config'
+var _fa = require("react-icons/fa");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const filterData = (searchText, allRestaurants)=>{
+    // console.log(searchText)
+    // console.log(restaurants)
+    if (searchText === "") return allRestaurants;
+    const filteredData = allRestaurants.filter((restaurant)=>restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase()));
+    return filteredData;
+};
+const Body = ()=>{
+    _s();
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
+    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        fetchRestaurantData();
+    }, []);
+    async function fetchRestaurantData() {
+        const res = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING");
+        const json = await res.json();
+        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    }
+    //early return
+    if (!allRestaurants) return null;
+    return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 36,
+        columnNumber: 44
+    }, undefined) : filteredRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "No Restaurant Found"
+    }, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 36,
+        columnNumber: 95
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-bar",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        placeholder: "Search",
+                        style: {
+                            "padding": "5px",
+                            "width": "20%",
+                            "borderRadius": "5px",
+                            "border": "1px solid grey"
+                        },
+                        value: searchText,
+                        onChange: (e)=>{
+                            setSearchText(e.target.value);
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 39,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaSearch), {
+                        className: "search-icon",
+                        onClick: ()=>{
+                            setFilteredRestaurants(filterData(searchText, allRestaurants));
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 46,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 38,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "body-container",
+                children: filteredRestaurants.map((restaurant)=>// console.log(restaurant.data)
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: `restaurant/${restaurant.data.id}`,
+                        children: /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
+                            ...restaurant.data,
+                            key: restaurant.data.id,
+                            __source: {
+                                fileName: "src/components/Body.js",
+                                lineNumber: 55,
+                                columnNumber: 21
+                            },
+                            __self: undefined
+                        })
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 54,
+                        columnNumber: 17
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 51,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(Body, "mfFD1GYTxUKS8gwZ1KRBG0D6XF0=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj","react-router-dom":"9xmpe"}],"bMboU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ffb1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _fa = require("react-icons/fa");
+var _config = require("../config");
+var _reactRouterDom = require("react-router-dom");
+const RestaurantCard = ({ cloudinaryImageId , name , cuisines , avgRating , slaString , costForTwoString , id  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "card-image",
+                alt: name,
+                src: `${(0, _config.IMG_CDN_URL)}/${cloudinaryImageId}`
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: cuisines.slice(0, 3).join(", ")
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "rating",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fa.FaStar), {
+                                size: "0.8em"
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantCard.js",
+                                lineNumber: 10,
+                                columnNumber: 36
+                            }, undefined),
+                            " ",
+                            avgRating,
+                            " "
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 10,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: slaString
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 11,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: costForTwoString
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 12,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantCard.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-icons/fa":"jZjPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN","react-router-dom":"9xmpe"}],"jtCLN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
+const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill" // export const restaurantInfo = [
+ //         {
+ //           "type": "restaurant",
+ //           "data": {
+ //             "type": "F",
+ //             "id": "279735",
+ //             "name": "Easy Bites by Hotel Empire",
+ //             "uuid": "b5eda477-5ddc-4826-a9d3-7a3b37c84b51",
+ //             "city": "1",
+ //             "area": "Ashok Nagar",
+ //             "totalRatingsString": "100+ ratings",
+ //             "cloudinaryImageId": "d06b7fa84cb8f8193f60d4c2de172347",
+ //             "cuisines": [
+ //               "Snacks",
+ //               "Fast Food",
+ //               "Beverages"
+ //             ],
+ //             "tags": [
+ //             ],
+ //             "costForTwo": 15000,
+ //             "costForTwoString": "₹150 FOR TWO",
+ //             "deliveryTime": 38,
+ //             "minDeliveryTime": 35,
+ //             "maxDeliveryTime": 45,
+ //             "slaString": "35-45 MINS",
+ //             "lastMileTravel": 2.0999999046325684,
+ //             "slugs": {
+ //               "restaurant": "easy-bites-central-bangalore-central-bangalore",
+ //               "city": "bangalore"
+ //             },
+ //             "cityState": "1",
+ //             "address": "No.35,Castel Street,Bangalore-560025,District-B.B.M.P East,STATE-Karnataka",
+ //             "locality": "Castel Street",
+ //             "parentId": 8503,
+ //             "unserviceable": false,
+ //             "veg": false,
+ //             "select": false,
+ //             "favorite": false,
+ //             "tradeCampaignHeaders": [
+ //             ],
+ //             "aggregatedDiscountInfo": {
+ //               "header": "50% off",
+ //               "shortDescriptionList": [
+ //                 {
+ //                   "meta": "50% off | Use WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "descriptionList": [
+ //                 {
+ //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "subHeader": "",
+ //               "headerType": 0,
+ //               "superFreedel": ""
+ //             },
+ //             "aggregatedDiscountInfoV2": {
+ //               "header": "50% OFF",
+ //               "shortDescriptionList": [
+ //                 {
+ //                   "meta": "Use WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "descriptionList": [
+ //                 {
+ //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "subHeader": "",
+ //               "headerType": 0,
+ //               "superFreedel": ""
+ //             },
+ //             "ribbon": [
+ //               {
+ //                 "type": "PROMOTED"
+ //               }
+ //             ],
+ //             "chain": [
+ //             ],
+ //             "feeDetails": {
+ //               "fees": [
+ //               ],
+ //               "totalFees": 0,
+ //               "message": "",
+ //               "title": "",
+ //               "amount": "",
+ //               "icon": ""
+ //             },
+ //             "availability": {
+ //               "opened": true,
+ //               "nextOpenMessage": "",
+ //               "nextCloseMessage": ""
+ //             },
+ //             "longDistanceEnabled": 0,
+ //             "rainMode": "NONE",
+ //             "thirdPartyAddress": false,
+ //             "thirdPartyVendor": "",
+ //             "adTrackingID": "cid=5855585~p=1~eid=00000186-25b9-ae7f-1287-ca33004e0164",
+ //             "badges": {
+ //               "imageBased": [
+ //               ],
+ //               "textBased": [
+ //               ],
+ //               "textExtendedBadges": [
+ //               ]
+ //             },
+ //             "lastMileTravelString": "2 kms",
+ //             "hasSurge": false,
+ //             "sla": {
+ //               "restaurantId": "279735",
+ //               "deliveryTime": 38,
+ //               "minDeliveryTime": 35,
+ //               "maxDeliveryTime": 45,
+ //               "lastMileTravel": 2.0999999046325684,
+ //               "lastMileDistance": 0,
+ //               "serviceability": "SERVICEABLE",
+ //               "rainMode": "NONE",
+ //               "longDistance": "NOT_LONG_DISTANCE",
+ //               "preferentialService": false,
+ //               "iconType": "EMPTY"
+ //             },
+ //             "promoted": true,
+ //             "avgRating": "4.1",
+ //             "totalRatings": 100,
+ //             "new": false
+ //           },
+ //           "subtype": "basic"
+ //         },
+ //         {
+ //           "type": "restaurant",
+ //           "data": {
+ //             "type": "F",
+ //             "id": "3241",
+ //             "name": "Meghana Foods",
+ //             "uuid": "93695df0-56e1-417e-b9a8-32084ebaadaf",
+ //             "city": "1",
+ //             "area": "Ashok Nagar",
+ //             "totalRatingsString": "1000+ ratings",
+ //             "cloudinaryImageId": "e0vvulfbahjxjz6k4uwi",
+ //             "cuisines": [
+ //               "Biryani",
+ //               "Andhra",
+ //               "South Indian",
+ //               "North Indian",
+ //               "Chinese",
+ //               "Seafood"
+ //             ],
+ //             "tags": [
+ //             ],
+ //             "costForTwo": 50000,
+ //             "costForTwoString": "₹500 FOR TWO",
+ //             "deliveryTime": 37,
+ //             "minDeliveryTime": 35,
+ //             "maxDeliveryTime": 45,
+ //             "slaString": "35-45 MINS",
+ //             "lastMileTravel": 2.4000000953674316,
+ //             "slugs": {
+ //               "restaurant": "meghana-foods-central-bangalore",
+ //               "city": "bangalore"
+ //             },
+ //             "cityState": "1",
+ //             "address": "57/1, 1st Floor, Jayalaxmi Chambers, Next to Old Galaxy Theatre,Residency Road, Bangalore",
+ //             "locality": "Residency Road",
+ //             "parentId": 635,
+ //             "unserviceable": false,
+ //             "veg": false,
+ //             "select": false,
+ //             "favorite": false,
+ //             "tradeCampaignHeaders": [
+ //             ],
+ //             "aggregatedDiscountInfo": {
+ //               "header": "50% off",
+ //               "shortDescriptionList": [
+ //                 {
+ //                   "meta": "50% off | Use WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "descriptionList": [
+ //                 {
+ //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "subHeader": "",
+ //               "headerType": 0,
+ //               "superFreedel": ""
+ //             },
+ //             "aggregatedDiscountInfoV2": {
+ //               "header": "50% OFF",
+ //               "shortDescriptionList": [
+ //                 {
+ //                   "meta": "Use WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "descriptionList": [
+ //                 {
+ //                   "meta": "50% off up to ₹100 | Use code WELCOME50",
+ //                   "discountType": "Percentage",
+ //                   "operationType": "RESTAURANT"
+ //                 }
+ //               ],
+ //               "subHeader": "",
+ //               "headerType": 0,
+ //               "superFreedel": ""
+ //             },
+ //             "chain": [
+ //             ],
+ //             "feeDetails": {
+ //               "fees": [
+ //               ],
+ //               "totalFees": 0,
+ //               "message": "",
+ //               "title": "",
+ //               "amount": "",
+ //               "icon": ""
+ //             },
+ //             "availability": {
+ //               "opened": true,
+ //               "nextOpenMessage": "",
+ //               "nextCloseMessage": ""
+ //             },
+ //             "longDistanceEnabled": 0,
+ //             "rainMode": "NONE",
+ //             "thirdPartyAddress": false,
+ //             "thirdPartyVendor": "",
+ //             "adTrackingID": "",
+ //             "badges": {
+ //               "imageBased": [
+ //               ],
+ //               "textBased": [
+ //               ],
+ //               "textExtendedBadges": [
+ //               ]
+ //             },
+ //             "lastMileTravelString": "2.4 kms",
+ //             "hasSurge": false,
+ //             "sla": {
+ //               "restaurantId": "3241",
+ //               "deliveryTime": 37,
+ //               "minDeliveryTime": 35,
+ //               "maxDeliveryTime": 45,
+ //               "lastMileTravel": 2.4000000953674316,
+ //               "lastMileDistance": 0,
+ //               "serviceability": "SERVICEABLE",
+ //               "rainMode": "NONE",
+ //               "longDistance": "NOT_LONG_DISTANCE",
+ //               "preferentialService": false,
+ //               "iconType": "EMPTY"
+ //             },
+ //             "promoted": false,
+ //             "avgRating": "4.5",
+ //             "totalRatings": 1000,
+ //             "new": false
+ //           },
+ //           "subtype": "basic"
+ //         },
+ //         {
+ //         "type": "restaurant",
+ //         "data": {
+ //           "type": "F",
+ //           "id": "47493",
+ //           "name": "Hari Super Sandwich (3rd Block)",
+ //           "uuid": "97798836-f15a-4566-bdeb-7e4d1b0eac20",
+ //           "city": "1",
+ //           "area": "Jayanagar",
+ //           "totalRatingsString": "1000+ ratings",
+ //           "cloudinaryImageId": "ml1ituszk5qurjia3r9h",
+ //           "cuisines": [
+ //             "Chaat",
+ //             "Snacks",
+ //             "Pizzas",
+ //             "North Indian",
+ //             "Indian"
+ //           ],
+ //           "tags": [
+ //           ],
+ //           "costForTwo": 10000,
+ //           "costForTwoString": "₹100 FOR TWO",
+ //           "deliveryTime": 48,
+ //           "minDeliveryTime": 45,
+ //           "maxDeliveryTime": 55,
+ //           "slaString": "45-55 MINS",
+ //           "lastMileTravel": 5,
+ //           "slugs": {
+ //             "restaurant": "hari-super-sandwich-jayanagar-jayanagar",
+ //             "city": "bangalore"
+ //           },
+ //           "cityState": "1",
+ //           "address": "No 177/A 22nd cross 3rd block Jayanagar Bangalore 560011",
+ //           "locality": "3rd Block",
+ //           "parentId": 352495,
+ //           "unserviceable": false,
+ //           "veg": true,
+ //           "select": false,
+ //           "favorite": false,
+ //           "tradeCampaignHeaders": [
+ //           ],
+ //           "aggregatedDiscountInfo": {
+ //             "header": "50% off",
+ //             "shortDescriptionList": [
+ //               {
+ //                 "meta": "50% off | Use WELCOME50",
+ //                 "discountType": "Percentage",
+ //                 "operationType": "RESTAURANT"
+ //               }
+ //             ],
+ //             "descriptionList": [
+ //               {
+ //                 "meta": "50% off up to ₹100 | Use code WELCOME50",
+ //                 "discountType": "Percentage",
+ //                 "operationType": "RESTAURANT"
+ //               }
+ //             ],
+ //             "subHeader": "",
+ //             "headerType": 0,
+ //             "superFreedel": ""
+ //           },
+ //           "aggregatedDiscountInfoV2": {
+ //             "header": "50% OFF",
+ //             "shortDescriptionList": [
+ //               {
+ //                 "meta": "Use WELCOME50",
+ //                 "discountType": "Percentage",
+ //                 "operationType": "RESTAURANT"
+ //               }
+ //             ],
+ //             "descriptionList": [
+ //               {
+ //                 "meta": "50% off up to ₹100 | Use code WELCOME50",
+ //                 "discountType": "Percentage",
+ //                 "operationType": "RESTAURANT"
+ //               }
+ //             ],
+ //             "subHeader": "",
+ //             "headerType": 0,
+ //             "superFreedel": ""
+ //           },
+ //           "chain": [
+ //           ],
+ //           "feeDetails": {
+ //             "fees": [
+ //             ],
+ //             "totalFees": 0,
+ //             "message": "",
+ //             "title": "",
+ //             "amount": "",
+ //             "icon": ""
+ //           },
+ //           "availability": {
+ //             "opened": true,
+ //             "nextOpenMessage": "",
+ //             "nextCloseMessage": ""
+ //           },
+ //           "longDistanceEnabled": 0,
+ //           "rainMode": "NONE",
+ //           "thirdPartyAddress": false,
+ //           "thirdPartyVendor": "",
+ //           "adTrackingID": "",
+ //           "badges": {
+ //             "imageBased": [
+ //             ],
+ //             "textBased": [
+ //             ],
+ //             "textExtendedBadges": [
+ //             ]
+ //           },
+ //           "lastMileTravelString": "5 kms",
+ //           "hasSurge": false,
+ //           "sla": {
+ //             "restaurantId": "47493",
+ //             "deliveryTime": 48,
+ //             "minDeliveryTime": 45,
+ //             "maxDeliveryTime": 55,
+ //             "lastMileTravel": 5,
+ //             "lastMileDistance": 0,
+ //             "serviceability": "SERVICEABLE",
+ //             "rainMode": "NONE",
+ //             "longDistance": "NOT_LONG_DISTANCE",
+ //             "preferentialService": false,
+ //             "iconType": "EMPTY"
+ //           },
+ //           "promoted": false,
+ //           "avgRating": "4.0",
+ //           "totalRatings": 1000,
+ //           "new": false
+ //         },
+ //         "subtype": "basic"
+ //         },
+ //         {
+ //             "type": "restaurant",
+ //             "data": {
+ //             "type": "F",
+ //             "id": "210945",
+ //             "name": "Royal Restaurant",
+ //             "uuid": "9b33bca4-65e6-4a26-af3e-f47c4476ed4d",
+ //             "city": "1",
+ //             "area": "Shivajinagar",
+ //             "totalRatingsString": "500+ ratings",
+ //             "cloudinaryImageId": "yicweopn4lzcjlqy4jvq",
+ //             "cuisines": [
+ //                 "Chinese",
+ //                 "North Indian",
+ //                 "Tandoor"
+ //             ],
+ //             "tags": [
+ //             ],
+ //             "costForTwo": 30000,
+ //             "costForTwoString": "₹300 FOR TWO",
+ //             "deliveryTime": 38,
+ //             "minDeliveryTime": 35,
+ //             "maxDeliveryTime": 45,
+ //             "slaString": "35-45 MINS",
+ //             "lastMileTravel": 2.5999999046325684,
+ //             "slugs": {
+ //                 "restaurant": "royal-restaurant-central-bangalore-central-bangalore",
+ //                 "city": "bangalore"
+ //             },
+ //             "cityState": "1",
+ //             "address": "Broadway Road Police Station, HKP Road, Sulthangunta, Shivajinagar, Bengaluru, Bangalore Urban, Karnataka, India",
+ //             "locality": "Sulthangunta",
+ //             "parentId": 2896,
+ //             "unserviceable": false,
+ //             "veg": false,
+ //             "select": false,
+ //             "favorite": false,
+ //             "tradeCampaignHeaders": [
+ //             ],
+ //             "aggregatedDiscountInfo": {
+ //                 "header": "35% off",
+ //                 "shortDescriptionList": [
+ //                 {
+ //                     "meta": "35% off on all orders",
+ //                     "discountType": "Percentage",
+ //                     "operationType": "RESTAURANT"
+ //                 },
+ //                 {
+ //                     "meta": "FREE DELIVERY",
+ //                     "discountType": "FREE_DELIVERY",
+ //                     "operationType": "RESTAURANT"
+ //                 }
+ //                 ],
+ //                 "descriptionList": [
+ //                 {
+ //                     "meta": "35% off on all orders",
+ //                     "discountType": "Percentage",
+ //                     "operationType": "RESTAURANT"
+ //                 },
+ //                 {
+ //                     "meta": "FREE DELIVERY",
+ //                     "discountType": "FREE_DELIVERY",
+ //                     "operationType": "RESTAURANT"
+ //                 }
+ //                 ],
+ //                 "subHeader": "",
+ //                 "headerType": 0,
+ //                 "superFreedel": ""
+ //             },
+ //             "aggregatedDiscountInfoV2": {
+ //                 "header": "35% OFF",
+ //                 "shortDescriptionList": [
+ //                 {
+ //                     "meta": "Free Delivery",
+ //                     "discountType": "Percentage",
+ //                     "operationType": "RESTAURANT"
+ //                 }
+ //                 ],
+ //                 "descriptionList": [
+ //                 {
+ //                     "meta": "35% off on all orders",
+ //                     "discountType": "Percentage",
+ //                     "operationType": "RESTAURANT"
+ //                 },
+ //                 {
+ //                     "meta": "FREE DELIVERY",
+ //                     "discountType": "FREE_DELIVERY",
+ //                     "operationType": "RESTAURANT"
+ //                 }
+ //                 ],
+ //                 "subHeader": "",
+ //                 "headerType": 0,
+ //                 "superFreedel": ""
+ //             },
+ //             "chain": [
+ //             ],
+ //             "feeDetails": {
+ //                 "fees": [
+ //                 ],
+ //                 "totalFees": 0,
+ //                 "message": "",
+ //                 "title": "",
+ //                 "amount": "",
+ //                 "icon": ""
+ //             },
+ //             "availability": {
+ //                 "opened": true,
+ //                 "nextOpenMessage": "",
+ //                 "nextCloseMessage": ""
+ //             },
+ //             "longDistanceEnabled": 0,
+ //             "rainMode": "NONE",
+ //             "thirdPartyAddress": false,
+ //             "thirdPartyVendor": "",
+ //             "adTrackingID": "",
+ //             "badges": {
+ //                 "imageBased": [
+ //                 ],
+ //                 "textBased": [
+ //                 ],
+ //                 "textExtendedBadges": [
+ //                 ]
+ //             },
+ //             "lastMileTravelString": "2.5 kms",
+ //             "hasSurge": false,
+ //             "sla": {
+ //                 "restaurantId": "210945",
+ //                 "deliveryTime": 38,
+ //                 "minDeliveryTime": 35,
+ //                 "maxDeliveryTime": 45,
+ //                 "lastMileTravel": 2.5999999046325684,
+ //                 "lastMileDistance": 0,
+ //                 "serviceability": "SERVICEABLE",
+ //                 "rainMode": "NONE",
+ //                 "longDistance": "NOT_LONG_DISTANCE",
+ //                 "preferentialService": false,
+ //                 "iconType": "EMPTY"
+ //             },
+ //             "promoted": false,
+ //             "avgRating": "4.0",
+ //             "totalRatings": 500,
+ //             "new": false
+ //             },
+ //             "subtype": "basic"
+ //         }
+ // ]
+;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: Array(10).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "img-shimmer"
+                    }, void 0, false, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 8,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "name-shimmer"
+                    }, void 0, false, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 9,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "cuisines-shimmer"
+                    }, void 0, false, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 10,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "cuisines-shimmer"
+                    }, void 0, false, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 11,
+                        columnNumber: 21
+                    }, undefined)
+                ]
+            }, index, true, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 7,
+                columnNumber: 17
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bc7c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Footer"
+        }, void 0, false, {
+            fileName: "src/components/Footer.js",
+            lineNumber: 3,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Footer.js",
+        lineNumber: 2,
+        columnNumber: 5
+    }, undefined);
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$bc7c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9R1Eu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$5b98.prelude(module);
 
 try {
+// import { Link } from "react-router-dom";
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const About = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+const About = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        class: "about",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Hi There."
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 3,
+                lineNumber: 4,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Welcome to India Eats' about page. Let us give your hunger a new option."
+                children: "Welcome to India Eats' about page. Let us give your hunger a new option \uD83D\uDE80 "
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 4,
+                lineNumber: 5,
                 columnNumber: 9
             }, undefined)
         ]
-    }, void 0, true);
+    }, void 0, true, {
+        fileName: "src/components/About.js",
+        lineNumber: 3,
+        columnNumber: 5
+    }, undefined);
 _c = About;
 exports.default = About;
 var _c;
@@ -61205,6 +61265,172 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire486a")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ee46.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Contact = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        class: "contact",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+            children: "This is the contact page for India eats"
+        }, void 0, false, {
+            fileName: "src/components/Contact.js",
+            lineNumber: 4,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Contact.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Contact;
+exports.default = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
+
+  $parcel$ReactRefreshHelpers$ee46.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PuJ6":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$40d6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$40d6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _react = require("react");
+var _config = require("../config");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _s = $RefreshSig$();
+const RestaurantMenu = ()=>{
+    _s();
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    const [restaurantInfo, setRestaurantInfo] = (0, _react.useState)(null);
+    const { id  } = (0, _reactRouterDom.useParams)();
+    (0, _react.useEffect)(()=>{
+        fetchRestaurantInfo();
+    }, []);
+    async function fetchRestaurantInfo() {
+        const res = await fetch(`https://www.swiggy.com/dapi/menu/v4/full?lat=12.9715987&lng=77.5945627&menuId=${id}`);
+        const jsonData = await res.json();
+        // console.log(jsonData?.data);
+        setRestaurantInfo(jsonData?.data);
+    }
+    //Early return when restaurantInfo is null
+    if (!restaurantInfo) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/RestaurantMenu.js",
+        lineNumber: 24,
+        columnNumber: 12
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "restaurant-menu",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: restaurantInfo.name
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.js",
+                        lineNumber: 29,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: `${(0, _config.IMG_CDN_URL)}/${restaurantInfo.cloudinaryImageId}`
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.js",
+                        lineNumber: 30,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: restaurantInfo.avgRating
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.js",
+                        lineNumber: 31,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: restaurantInfo.city
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.js",
+                        lineNumber: 32,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: restaurantInfo.costForTwoMsg
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.js",
+                        lineNumber: 33,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantMenu.js",
+                lineNumber: 28,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: // console.log(Object.values(restaurantInfo?.menu?.items))
+                    Object.values(restaurantInfo?.menu?.items).map((item)=>{
+                        // console.log(item)
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: [
+                                " ",
+                                item?.name
+                            ]
+                        }, item?.id, true, {
+                            fileName: "src/components/RestaurantMenu.js",
+                            lineNumber: 43,
+                            columnNumber: 33
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/components/RestaurantMenu.js",
+                    lineNumber: 36,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/RestaurantMenu.js",
+                lineNumber: 35,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantMenu.js",
+        lineNumber: 27,
+        columnNumber: 9
+    }, undefined);
+};
+_s(RestaurantMenu, "mxpbo6D0nDOEjvivaMvleUMgA+s=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+_c = RestaurantMenu;
+exports.default = RestaurantMenu;
+var _c;
+$RefreshReg$(_c, "RestaurantMenu");
+
+  $parcel$ReactRefreshHelpers$40d6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN","./Shimmer":"g6ZGj"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire486a")
 
 //# sourceMappingURL=index.7271efb6.js.map
